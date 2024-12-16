@@ -1,0 +1,172 @@
+[
+  {
+    "id": "DE0",
+    "name": "Potager d'Halouine",
+    "categoryId": 888,
+    "order": 0,
+    "boss": "Halouine",
+    "challenge": ["Classique", "Chrono", "Hardi", "Dernier", "Duo", "Spécial"],
+    "emmaOrder": null,
+    "metagOrder": null,
+    "imgPath": "monsters/DE/Halouine.webp"
+  },
+  {
+    "id": "DE1",
+    "name": "Donjon de Nowel",
+    "categoryId": 888,
+    "order": 1,
+    "boss": "Sapik",
+    "challenge": [
+      "Classique",
+      "Chrono",
+      "Hardi",
+      "Blitzkrieg",
+      "Duo",
+      "Spécial"
+    ],
+    "emmaOrder": null,
+    "metagOrder": null,
+    "imgPath": "monsters/DE/Sapik.webp"
+  },
+  {
+    "id": "DE2",
+    "name": "Caverne de Nowel",
+    "categoryId": 888,
+    "order": 2,
+    "boss": "Papa Nowel",
+    "challenge": ["Classique", "Chrono", "Premier", "Statue", "Duo", "Spécial"],
+    "emmaOrder": null,
+    "metagOrder": null,
+    "imgPath": "monsters/DE/Nowel.webp"
+  },
+  {
+    "id": "DE3",
+    "name": "Maison du Papa Nowel",
+    "categoryId": 888,
+    "order": 3,
+    "boss": "Père Fwettar",
+    "challenge": ["Classique", "Chrono", "Nomade", "Hardi", "Duo", "Spécial"],
+    "emmaOrder": null,
+    "metagOrder": null,
+    "imgPath": "monsters/DE/Fwettar.webp"
+  },
+  {
+    "id": "DE4",
+    "name": "Fonderie des Waddicts",
+    "categoryId": 888,
+    "order": 4,
+    "boss": "Mawabouaino",
+    "challenge": [
+      "Classique",
+      "Chrono",
+      "Versatile",
+      "Collant",
+      "Duo",
+      "Spécial"
+    ],
+    "emmaOrder": null,
+    "metagOrder": null,
+    "imgPath": "monsters/DE/Mawa.webp"
+  },
+  {
+    "id": "DE5",
+    "name": "Croquanterie",
+    "categoryId": 888,
+    "order": 5,
+    "boss": "Croqueleur",
+    "challenge": [
+      "Classique",
+      "Chrono",
+      "Circulez",
+      "Blitzkrieg",
+      "Duo",
+      "Spécial"
+    ],
+    "emmaOrder": null,
+    "metagOrder": null,
+    "imgPath": "monsters/DE/Croqueleur.webp"
+  },
+  {
+    "id": "DE6",
+    "name": "Temple du dieu Kao",
+    "categoryId": 888,
+    "order": 6,
+    "boss": "Prêtresse de Kao",
+    "challenge": [
+      "Classique",
+      "Chrono",
+      "Premier",
+      "Liberté",
+      "Duo",
+      "Spécial"
+    ],
+    "emmaOrder": null,
+    "metagOrder": null,
+    "imgPath": "monsters/DE/Kao.webp"
+  },
+  {
+    "id": "DE7",
+    "name": "Cratère de Minus Somnambule",
+    "categoryId": 888,
+    "order": 7,
+    "boss": "Grozilla et Grasmera Somnambules",
+    "challenge": [
+      "Classique",
+      "Chrono",
+      "Statue",
+      "Mains Propres",
+      "Duo",
+      "Spécial"
+    ],
+    "emmaOrder": null,
+    "metagOrder": null,
+    "imgPath": "monsters/DE/Grozzila.webp"
+  },
+  {
+    "id": "DE8",
+    "name": "Cratère de Minus Épuisé",
+    "categoryId": 888,
+    "order": 8,
+    "boss": "Grozilla et Grasmera Épuisés",
+    "challenge": [
+      "Classique",
+      "Chrono",
+      "Premier",
+      "Collant",
+      "Duo",
+      "Spécial"
+    ],
+    "emmaOrder": null,
+    "metagOrder": null,
+    "imgPath": "monsters/DE/Grasmera.webp"
+  },
+  {
+    "id": "DE9",
+    "name": "Cratère de Minus Fatigué",
+    "categoryId": 888,
+    "order": 9,
+    "boss": "Grozilla et Grasmera Fatigués",
+    "challenge": [
+      "Classique",
+      "Chrono",
+      "Nomade",
+      "Blitzkrieg",
+      "Duo",
+      "Spécial"
+    ],
+    "emmaOrder": null,
+    "metagOrder": null,
+    "imgPath": "monsters/DE/Grozzila.webp"
+  },
+  {
+    "id": "DE10",
+    "name": "Cratère de Minus",
+    "categoryId": 888,
+    "order": 10,
+    "boss": "Grozilla et Grasmera",
+    "challenge": ["Classique", "Chrono", "Zombie", "Hardi", "Duo", "Spécial"],
+    "emmaOrder": null,
+    "metagOrder": null,
+    "imgPath": "monsters/DE/Grasmera.webp"
+  }
+]

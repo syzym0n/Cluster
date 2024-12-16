@@ -1,0 +1,178 @@
+[
+  {
+    "id": "D1A500",
+    "name": "Crypte de Kardorim",
+    "categoryId": 150,
+    "order": 0,
+    "boss": "Kardorim",
+    "challenge": ["Classique", "Zombie", "Premier", "Duo", "Spécial"],
+    "emmaOrder": null,
+    "metagOrder": null,
+    "imgPath": "monsters/D1A50/Kardorim.webp"
+  },
+  {
+    "id": "D1A501",
+    "name": "Grange du Tournesol Affamé",
+    "categoryId": 150,
+    "order": 1,
+    "boss": "Tournesol Affamé",
+    "challenge": ["Classique", "Collant", "Premier", "Duo", "Spécial"],
+    "emmaOrder": null,
+    "metagOrder": 1,
+    "imgPath": "monsters/D1A50/Tournesol.webp"
+  },
+  {
+    "id": "D1A502",
+    "name": "Château Ensablé",
+    "categoryId": 150,
+    "order": 2,
+    "boss": "Mob l'Éponge",
+    "challenge": ["Classique", "Misanthrope", "Versatile", "Duo", "Spécial"],
+    "emmaOrder": 1,
+    "metagOrder": null,
+    "imgPath": "monsters/D1A50/Mob.webp"
+  },
+  {
+    "id": "D1A503",
+    "name": "Cour du Bouftou Royal",
+    "categoryId": 150,
+    "order": 3,
+    "boss": "Bouftou Royal",
+    "challenge": ["Classique", "Prudent", "Blitzkrieg", "Duo", "Spécial"],
+    "emmaOrder": null,
+    "metagOrder": 2,
+    "imgPath": "monsters/D1A50/Bouftou.webp"
+  },
+  {
+    "id": "D1A504",
+    "name": "Donjon des Scarafeuilles",
+    "categoryId": 150,
+    "order": 4,
+    "boss": "Scarabosse Doré",
+    "challenge": ["Classique", "Zombie", "Mains Propres", "Duo", "Spécial"],
+    "emmaOrder": null,
+    "metagOrder": 5,
+    "imgPath": "monsters/D1A50/Scarafeuille.webp"
+  },
+  {
+    "id": "D1A505",
+    "name": "Donjon des Tofus",
+    "categoryId": 150,
+    "order": 5,
+    "boss": "Batofu",
+    "challenge": ["Classique", "Statue", "Versatile", "Duo", "Spécial"],
+    "emmaOrder": null,
+    "metagOrder": 4,
+    "imgPath": "monsters/D1A50/Batofu.webp"
+  },
+  {
+    "id": "D1A506",
+    "name": "Maison Fantôme",
+    "categoryId": 150,
+    "order": 6,
+    "boss": "Boostache",
+    "challenge": ["Classique", "Misanthrope", "Dernier", "Duo", "Spécial"],
+    "emmaOrder": 3,
+    "metagOrder": null,
+    "imgPath": "monsters/D1A50/Boostache.webp"
+  },
+  {
+    "id": "D1A507",
+    "name": "Donjon des Squelettes",
+    "categoryId": 150,
+    "order": 7,
+    "boss": "Chafer Ronin",
+    "challenge": ["Classique", "Nomade", "Premier", "Duo", "Spécial"],
+    "emmaOrder": null,
+    "metagOrder": 3,
+    "imgPath": "monsters/D1A50/Chafer.webp"
+  },
+  {
+    "id": "D1A508",
+    "name": "Cache de Kankreblath",
+    "categoryId": 150,
+    "order": 8,
+    "boss": "Kankreblath",
+    "challenge": ["Classique", "Dernier", "Collant", "Duo", "Spécial"],
+    "emmaOrder": 2,
+    "metagOrder": null,
+    "imgPath": "monsters/D1A50/Kankreblath.webp"
+  },
+  {
+    "id": "D1A509",
+    "name": "Akadémie des Gobs",
+    "categoryId": 150,
+    "order": 9,
+    "boss": "Directeur Grunob",
+    "challenge": ["Classique", "Nomade", "Premier", "Duo", "Spécial"],
+    "emmaOrder": 4,
+    "metagOrder": null,
+    "imgPath": "monsters/D1A50/Grunob.webp"
+  },
+  {
+    "id": "D1A5010",
+    "name": "Donjon des Bworks",
+    "categoryId": 150,
+    "order": 10,
+    "boss": "Bworkette",
+    "challenge": ["Classique", "Misanthrope", "Premier", "Duo", "Spécial"],
+    "emmaOrder": null,
+    "metagOrder": 7,
+    "imgPath": "monsters/D1A50/Bworkette.webp"
+  },
+  {
+    "id": "D1A5011",
+    "name": "Donjon des Forgerons",
+    "categoryId": 150,
+    "order": 11,
+    "boss": "Coffre des Forgerons",
+    "challenge": ["Classique", "Nomade", "Premier", "Duo", "Spécial"],
+    "emmaOrder": null,
+    "metagOrder": 6,
+    "imgPath": "monsters/D1A50/Coffre.webp"
+  },
+  {
+    "id": "D1A5012",
+    "name": "Donjon des Larves",
+    "categoryId": 150,
+    "order": 12,
+    "boss": "Shin Larve",
+    "challenge": ["Classique", "Prudent", "Versatile", "Duo", "Spécial"],
+    "emmaOrder": null,
+    "metagOrder": 8,
+    "imgPath": "monsters/D1A50/Larve.webp"
+  },
+  {
+    "id": "D1A5013",
+    "name": "Grotte Hesque",
+    "categoryId": 150,
+    "order": 13,
+    "boss": "Corailleur Magistral",
+    "challenge": ["Classique", "Hardi", "Blitzkrieg", "Duo", "Spécial"],
+    "emmaOrder": 6,
+    "metagOrder": null,
+    "imgPath": "monsters/D1A50/Corailleur.webp"
+  },
+  {
+    "id": "D1A5014",
+    "name": "Nid du Kwakwa",
+    "categoryId": 150,
+    "order": 14,
+    "boss": "Kwakwa",
+    "challenge": ["Classique", "Zombie", "Mains Propres", "Duo", "Spécial"],
+    "emmaOrder": 5,
+    "metagOrder": null,
+    "imgPath": "monsters/D1A50/Kwakwa.webp"
+  },
+  {
+    "id": "D1A5015",
+    "name": "Refuge Sylvestre",
+    "categoryId": 150,
+    "order": 15,
+    "boss": "Rakoopeur",
+    "challenge": ["Classique", "Dernier", "Prudent", "Duo", "Spécial"],
+    "emmaOrder": null,
+    "metagOrder": 9,
+    "imgPath": "monsters/D1A50/Rakoopeur.webp"
+  }
+]

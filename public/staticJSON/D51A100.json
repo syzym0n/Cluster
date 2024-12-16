@@ -1,0 +1,233 @@
+[
+  {
+    "id": "D50A1000",
+    "name": "Château du Wa Wabbit",
+    "categoryId": 51100,
+    "order": 0,
+    "boss": "Wa Wabbit",
+    "challenge": ["Classique", "Hardi", "Blitzkrieg", "Duo", "Spécial"],
+    "emmaOrder": 9,
+    "metagOrder": null,
+    "imgPath": "monsters/D51A100/Wabbit.webp"
+  },
+  {
+    "id": "D50A1001",
+    "name": "Village Kanniboul",
+    "categoryId": 51100,
+    "order": 1,
+    "boss": "Kanniboul",
+    "challenge": ["Classique", "Zombie", "Premier", "Duo", "Spécial"],
+    "emmaOrder": 8,
+    "metagOrder": null,
+    "imgPath": "monsters/D51A100/Kaniboul.webp"
+  },
+  {
+    "id": "D50A1002",
+    "name": "Clos des Blops",
+    "categoryId": 51100,
+    "order": 2,
+    "boss": "Blops Royaux",
+    "challenge": ["Classique", "Duel", "Prudent", "Duo", "Spécial"],
+    "emmaOrder": 7,
+    "metagOrder": null,
+    "imgPath": "monsters/D51A100/Blop.webp"
+  },
+  {
+    "id": "D50A1003",
+    "name": "Gelaxième Dimension",
+    "categoryId": 51100,
+    "order": 3,
+    "boss": "Gelées Royales",
+    "challenge": ["Classique", "Duel", "Collant", "Duo", "Spécial"],
+    "emmaOrder": null,
+    "metagOrder": null,
+    "imgPath": "monsters/D51A100/Gelee.webp"
+  },
+  {
+    "id": "D50A1004",
+    "name": "Laboratoire de Brumen Tinctorias",
+    "categoryId": 51100,
+    "order": 4,
+    "boss": "Nelween",
+    "challenge": ["Classique", "Dernier", "Misanthrope", "Duo", "Spécial"],
+    "emmaOrder": 12,
+    "metagOrder": null,
+    "imgPath": "monsters/D51A100/Nelween.webp"
+  },
+  {
+    "id": "D50A1005",
+    "name": "Cale de l'Arche d'Otomaï",
+    "categoryId": 51100,
+    "order": 5,
+    "boss": "Gourlo le Terrible",
+    "challenge": ["Classique", "Premier", "Économe", "Duo", "Spécial"],
+    "emmaOrder": 10,
+    "metagOrder": null,
+    "imgPath": "monsters/D51A100/Gourlo.webp"
+  },
+  {
+    "id": "D50A1006",
+    "name": "Donjon des Craqueleurs",
+    "categoryId": 51100,
+    "order": 6,
+    "boss": "Craqueleur Légendaire",
+    "challenge": ["Classique", "Prudent", "Premier", "Duo", "Spécial"],
+    "emmaOrder": null,
+    "metagOrder": 10,
+    "imgPath": ""
+  },
+  {
+    "id": "D50A1007",
+    "name": "Épreuve de Draegnerys",
+    "categoryId": 51100,
+    "order": 7,
+    "boss": "Draegnerys",
+    "challenge": ["Classique", "Focus", "Hardi", "Duo", "Spécial"],
+    "emmaOrder": 11,
+    "metagOrder": null,
+    "imgPath": "monsters/D51A100/Dragnerys.webp"
+  },
+  {
+    "id": "D50A1008",
+    "name": "Terrier du Wa Wabbit",
+    "categoryId": 51100,
+    "order": 8,
+    "boss": "Wa Wobot",
+    "challenge": ["Classique", "Mains Propres", "Blitzkrieg", "Duo", "Spécial"],
+    "emmaOrder": 14,
+    "metagOrder": null,
+    "imgPath": "monsters/D51A100/Wobot.webp"
+  },
+  {
+    "id": "D50A1009",
+    "name": "Cimetière des Mastodontes",
+    "categoryId": 51100,
+    "order": 9,
+    "boss": "Mantiscore",
+    "challenge": ["Classique", "Mains Propres", "Zombie", "Duo", "Spécial"],
+    "emmaOrder": 13,
+    "metagOrder": null,
+    "imgPath": ""
+  },
+  {
+    "id": "D50A10010",
+    "name": "Antre de la Reine Nyée",
+    "categoryId": 51100,
+    "order": 10,
+    "boss": "Reine Nyée",
+    "challenge": ["Classique", "Premier", "Hardi", "Duo", "Spécial"],
+    "emmaOrder": 17,
+    "metagOrder": null,
+    "imgPath": "monsters/D51A100/Nyee.webp"
+  },
+  {
+    "id": "D50A10011",
+    "name": "Domaine Ancestral",
+    "categoryId": 51100,
+    "order": 11,
+    "boss": "Abraknyde Ancestral",
+    "challenge": ["Classique", "Nomade", "Premier", "Duo", "Spécial"],
+    "emmaOrder": null,
+    "metagOrder": 11,
+    "imgPath": "monsters/D51A100/Abraknyde.webp"
+  },
+  {
+    "id": "D50A1012",
+    "name": "Bateau du Chouque",
+    "categoryId": 51100,
+    "order": 12,
+    "boss": "Le Chouque",
+    "challenge": ["Classique", "Dernier", "Nomade", "Duo", "Spécial"],
+    "emmaOrder": 15,
+    "metagOrder": null,
+    "imgPath": "monsters/D51A100/Chouque.webp"
+  },
+  {
+    "id": "D50A10013",
+    "name": "Chapiteau des Magik Riktus",
+    "categoryId": 51100,
+    "order": 13,
+    "boss": "Choudini",
+    "challenge": ["Classique", "Collant", "Hardi", "Duo", "Spécial"],
+    "emmaOrder": 16,
+    "metagOrder": null,
+    "imgPath": "monsters/D51A100/Choudini.webp"
+  },
+  {
+    "id": "D50A10014",
+    "name": "Antre du Dragon Cochon",
+    "categoryId": 51100,
+    "order": 14,
+    "boss": "Dragon Cochon",
+    "challenge": ["Classique", "Hardi", "Versatile", "Duo", "Spécial"],
+    "emmaOrder": null,
+    "metagOrder": 12,
+    "imgPath": "monsters/D51A100/Cochon.webp"
+  },
+  {
+    "id": "D50A10015",
+    "name": "Caverne du Koulosse",
+    "categoryId": 51100,
+    "order": 15,
+    "boss": "Koulosse",
+    "challenge": ["Classique", "Zombie", "Mains Propres", "Duo", "Spécial"],
+    "emmaOrder": null,
+    "metagOrder": 13,
+    "imgPath": "monsters/D51A100/Koulosse.webp"
+  },
+  {
+    "id": "D50A10016",
+    "name": "Tanière du Meulou",
+    "categoryId": 51100,
+    "order": 16,
+    "boss": "Meulou",
+    "challenge": ["Classique", "Premier", "Hardi", "Duo", "Spécial"],
+    "emmaOrder": null,
+    "metagOrder": 14,
+    "imgPath": "monsters/D51A100/Meulou.webp"
+  },
+  {
+    "id": "D50A10017",
+    "name": "Arbre de Moon",
+    "categoryId": 51100,
+    "order": 17,
+    "boss": "Moon",
+    "challenge": ["Classique", "Versatile", "Statue", "Duo", "Spécial"],
+    "emmaOrder": 20,
+    "metagOrder": null,
+    "imgPath": "monsters/D51A100/Moon.webp"
+  },
+  {
+    "id": "D50A10018",
+    "name": "Théâtre de Dramak",
+    "categoryId": 51100,
+    "order": 18,
+    "boss": "Maître des Pantins",
+    "challenge": ["Classique", "Statue", "Mains Propres", "Duo", "Spécial"],
+    "emmaOrder": 19,
+    "metagOrder": null,
+    "imgPath": "monsters/D51A100/Pantin.webp"
+  },
+  {
+    "id": "D50A10019",
+    "name": "Fabrique de Malléfisk",
+    "categoryId": 51100,
+    "order": 19,
+    "boss": "Malléfisk",
+    "challenge": ["Classique", "Circulez", "Blitzkrieg", "Duo", "Spécial"],
+    "emmaOrder": null,
+    "metagOrder": null,
+    "imgPath": "monsters/D51A100/Mallefisk.webp"
+  },
+  {
+    "id": "D50A10020",
+    "name": "Repaire du Kharnozor",
+    "categoryId": 51100,
+    "order": 20,
+    "boss": "Kharnozor",
+    "challenge": ["Classique", "Dernier", "Circulez", "Duo", "Spécial"],
+    "emmaOrder": 18,
+    "metagOrder": null,
+    "imgPath": "monsters/D51A100/Kharnozor.webp"
+  }
+]

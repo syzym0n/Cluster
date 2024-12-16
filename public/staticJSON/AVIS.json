@@ -1,0 +1,503 @@
+[
+    {
+        "id": "A0",
+        "name": "Fouduglen L'Écureuil",
+        "zone": "Astrub",
+        "categoryId": 333,
+        "order": 0,
+        "imgPath": "monsters/AVIS/Astrub/Fouduglen.webp"
+    },
+    {
+        "id": "A1",
+        "name": "Frakacia Leukocytine",
+        "zone": "Astrub",
+        "categoryId": 333,
+        "order": 1,
+        "imgPath": "monsters/AVIS/Astrub/Frakacia.webp"
+    },
+    {
+        "id": "A2",
+        "name": "Ogivol Scalarcin",
+        "zone": "Astrub",
+        "categoryId": 333,
+        "order": 2,
+        "imgPath": "monsters/AVIS/Astrub/Ogivol.webp"
+    },
+    {
+        "id": "A3",
+        "name": "Brumen Tinctorias",
+        "zone": "Astrub",
+        "categoryId": 333,
+        "order": 3,
+        "imgPath": "monsters/AVIS/Astrub/Brumen.webp"
+    },
+    {
+        "id": "A4",
+        "name": "Qil Bil",
+        "zone": "Astrub",
+        "categoryId": 333,
+        "order": 4,
+        "imgPath": "monsters/AVIS/Astrub/Qil.webp"
+    },
+    {
+        "id": "A5",
+        "name": "Padgref Demoël",
+        "zone": "Astrub",
+        "categoryId": 333,
+        "order": 5,
+        "imgPath": "monsters/AVIS/Astrub/Padgref.webp"
+    },
+    {
+        "id": "A6",
+        "name": "Marzwel le Gobelin",
+        "zone": "Astrub",
+        "categoryId": 333,
+        "order": 6,
+        "imgPath": "monsters/AVIS/Astrub/Marzwel.webp"
+    },
+    {
+        "id": "A7",
+        "name": "Aermyne 'Braco' Scalptaras",
+        "zone": "Astrub",
+        "categoryId": 333,
+        "order": 7,
+        "imgPath": "monsters/AVIS/Astrub/Aermyne.webp"
+    },
+    {
+        "id": "A8",
+        "name": "Musha l'Oni",
+        "zone": "Astrub",
+        "categoryId": 333,
+        "order": 8,
+        "imgPath": "monsters/AVIS/Astrub/Musha.webp"
+    },
+    {
+        "id": "A9",
+        "name": "Rok Gnorok",
+        "zone": "Astrub",
+        "categoryId": 333,
+        "order": 9,
+        "imgPath": "monsters/AVIS/Astrub/Rok.webp"
+    },
+    {
+        "id": "A10",
+        "name": "Zatoïshwan",
+        "zone": "Astrub",
+        "categoryId": 333,
+        "order": 10,
+        "imgPath": "monsters/AVIS/Astrub/Zatoishwan.webp"
+    },
+    {
+        "id": "A11",
+        "name": "Tyranne la Terrible",
+        "zone": "Amakna",
+        "categoryId": 333,
+        "order": 11,
+        "imgPath": "monsters/AVIS/Amakna/Tyranne.webp"
+    },
+    {
+        "id": "A12",
+        "name": "Naganita",
+        "zone": "Amakna",
+        "categoryId": 333,
+        "order": 12,
+        "imgPath": "monsters/AVIS/Amakna/Naganita.webp"
+    },
+    {
+        "id": "A13",
+        "name": "Nenufor Tilotus",
+        "zone": "Amakna",
+        "categoryId": 333,
+        "order": 13,
+        "imgPath": "monsters/AVIS/Amakna/Nenufor.webp"
+    },
+    {
+        "id": "A14",
+        "name": "Fojumo",
+        "zone": "Amakna",
+        "categoryId": 333,
+        "order": 14,
+        "imgPath": "monsters/AVIS/Amakna/Fojumo.webp"
+    },
+    {
+        "id": "A15",
+        "name": "Anatak Diskedor",
+        "zone": "Amakna",
+        "categoryId": 333,
+        "order": 15,
+        "imgPath": ""
+    },
+    {
+        "id": "A16",
+        "name": "Guerrier du K.O",
+        "zone": "Amakna",
+        "categoryId": 333,
+        "order": 16,
+        "imgPath": "monsters/AVIS/Amakna/Anatak.webp"
+    },
+    {
+        "id": "A17",
+        "name": "Grand Kongoku",
+        "zone": "Amakna",
+        "categoryId": 333,
+        "order": 17,
+        "imgPath": "monsters/AVIS/Amakna/Kongoku.webp"
+    },
+    {
+        "id": "A18",
+        "name": "Trukipik",
+        "zone": "Amakna",
+        "categoryId": 333,
+        "order": 18,
+        "imgPath": "monsters/AVIS/Amakna/Trukipik.webp"
+    },
+    {
+        "id": "A19",
+        "name": "Simbadas",
+        "zone": "Amakna",
+        "categoryId": 333,
+        "order": 19,
+        "imgPath": "monsters/AVIS/Amakna/Simbadas.webp"
+    },
+    {
+        "id": "A20",
+        "name": "Carlita de l'Aguerfelde",
+        "zone": "Amakna",
+        "categoryId": 333,
+        "order": 20,
+        "imgPath": "monsters/AVIS/Amakna/Carlita.webp"
+    },
+    {
+        "id": "A21",
+        "name": "Shushu Debruk'Sayl",
+        "zone": "Amakna",
+        "categoryId": 333,
+        "order": 21,
+        "imgPath": "monsters/AVIS/Amakna/Shushu.webp"
+    },
+    {
+        "id": "A22",
+        "name": "Predagob",
+        "zone": "Amakna",
+        "categoryId": 333,
+        "order": 22,
+        "imgPath": "monsters/AVIS/Amakna/Predagob.webp"
+    },
+    {
+        "id": "A23",
+        "name": "Ali Grothor",
+        "zone": "Justiciers",
+        "categoryId": 333,
+        "order": 24,
+        "imgPath": "monsters/AVIS/Justiciers/Ali.webp"
+    },
+    {
+        "id": "A24",
+        "name": "Les Guman",
+        "zone": "Justiciers",
+        "categoryId": 333,
+        "order": 23,
+        "imgPath": "monsters/AVIS/Justiciers/Guman.webp"
+    },
+    {
+        "id": "A25",
+        "name": "Gadoo",
+        "zone": "Justiciers",
+        "categoryId": 333,
+        "order": 25,
+        "imgPath": "monsters/AVIS/Justiciers/Gadoo.webp"
+    },
+    {
+        "id": "A26",
+        "name": "Amy L'Empoisonneuse",
+        "zone": "Justiciers",
+        "categoryId": 333,
+        "order": 26,
+        "imgPath": "monsters/AVIS/Justiciers/Amy.webp"
+    },
+    {
+        "id": "A27",
+        "name": "Hyperscampe",
+        "zone": "Justiciers",
+        "categoryId": 333,
+        "order": 27,
+        "imgPath": "monsters/AVIS/Justiciers/Hyperscampe.webp"
+    },
+    {
+        "id": "A28",
+        "name": "Homard Medali",
+        "zone": "Sufokia",
+        "categoryId": 333,
+        "order": 28,
+        "imgPath": "monsters/AVIS/Sufokia/Medali.webp"
+    },
+    {
+        "id": "A29",
+        "name": "Buldalazred",
+        "zone": "Sufokia",
+        "categoryId": 333,
+        "order": 29,
+        "imgPath": "monsters/AVIS/Sufokia/Buldalazred.webp"
+    },
+    {
+        "id": "A30",
+        "name": "Takomako",
+        "zone": "Sufokia",
+        "categoryId": 333,
+        "order": 30,
+        "imgPath": "monsters/AVIS/Sufokia/Takomako.webp"
+    },
+    {
+        "id": "A31",
+        "name": "Tournade",
+        "zone": "Saharach",
+        "categoryId": 333,
+        "order": 31,
+        "imgPath": "monsters/AVIS/Saharach/Tournade.webp"
+    },
+    {
+        "id": "A32",
+        "name": "Roi Camole",
+        "zone": "Saharach",
+        "categoryId": 333,
+        "order": 32,
+        "imgPath": "monsters/AVIS/Saharach/Camole.webp"
+    },
+    {
+        "id": "A33",
+        "name": "Ka'Youloud",
+        "zone": "Saharach",
+        "categoryId": 333,
+        "order": 33,
+        "imgPath": "monsters/AVIS/Saharach/Ka.webp"
+    },
+    {
+        "id": "A34",
+        "name": "Kheprikorne",
+        "zone": "Saharach",
+        "categoryId": 333,
+        "order": 34,
+        "imgPath": "monsters/AVIS/Saharach/Khepricorne.webp"
+    },
+    {
+        "id": "A35",
+        "name": "Bouflouth",
+        "zone": "Bourgade",
+        "categoryId": 333,
+        "order": 35,
+        "imgPath": "monsters/AVIS/Frigost/Bouflouth.webp"
+    },
+    {
+        "id": "A36",
+        "name": "Monsieur Pingouin",
+        "zone": "Bourgade",
+        "categoryId": 333,
+        "order": 36,
+        "imgPath": "monsters/AVIS/Frigost/Pingouin.webp"
+    },
+    {
+        "id": "A37",
+        "name": "Katigrou",
+        "zone": "Bourgade",
+        "categoryId": 333,
+        "order": 37,
+        "imgPath": "monsters/AVIS/Frigost/Katigrou.webp"
+    },
+    {
+        "id": "A38",
+        "name": "Fantomayte",
+        "zone": "Bourgade",
+        "categoryId": 333,
+        "order": 38,
+        "imgPath": "monsters/AVIS/Frigost/Fantomayte.webp"
+    },
+    {
+        "id": "A39",
+        "name": "Vengeuse Masquée",
+        "zone": "Bourgade",
+        "categoryId": 333,
+        "order": 39,
+        "imgPath": "monsters/AVIS/Frigost/Vengeuse.webp"
+    },
+    {
+        "id": "A40",
+        "name": "YeCh'Ti",
+        "zone": "Bourgade",
+        "categoryId": 333,
+        "order": 40,
+        "imgPath": "monsters/AVIS/Frigost/Yech.webp"
+    },
+    {
+        "id": "A41",
+        "name": "Docteur Eggob",
+        "zone": "Bourgade",
+        "categoryId": 333,
+        "order": 41,
+        "imgPath": "monsters/AVIS/Frigost/Eggob.webp"
+    },
+    {
+        "id": "A42",
+        "name": "Fuji Givrefoux",
+        "zone": "Village Enseveli",
+        "categoryId": 333,
+        "order": 42,
+        "imgPath": "monsters/AVIS/Frigost/Fuji.webp"
+    },
+    {
+        "id": "A43",
+        "name": "Dremoan",
+        "zone": "Village Enseveli",
+        "categoryId": 333,
+        "order": 43,
+        "imgPath": "monsters/AVIS/Frigost/Dremoan.webp"
+    },
+    {
+        "id": "A44",
+        "name": "Flasho",
+        "zone": "Village Enseveli",
+        "categoryId": 333,
+        "order": 44,
+        "imgPath": "monsters/AVIS/Frigost/Flasho.webp"
+    },
+    {
+        "id": "A45",
+        "name": "Viti Glourson",
+        "zone": "Village Enseveli",
+        "categoryId": 333,
+        "order": 45,
+        "imgPath": "monsters/AVIS/Frigost/Viti.webp"
+    },
+    {
+        "id": "A46",
+        "name": "Glourdorak",
+        "zone": "Chateau du Comte Harebourg",
+        "categoryId": 333,
+        "order": 46,
+        "imgPath": "monsters/AVIS/Frigost/Glourdorak.webp"
+    },
+    {
+        "id": "A47",
+        "name": "Mekamouth",
+        "zone": "Chateau du Comte Harebourg",
+        "categoryId": 333,
+        "order": 47,
+        "imgPath": "monsters/AVIS/Frigost/Mekamouth.webp"
+    },
+    {
+        "id": "A48",
+        "name": "Psikopompe",
+        "zone": "Chateau du Comte Harebourg",
+        "categoryId": 333,
+        "order": 48,
+        "imgPath": "monsters/AVIS/Frigost/Psikopompe.webp"
+    },
+    {
+        "id": "A49",
+        "name": "Chevalier de Glace",
+        "zone": "Chateau du Comte Harebourg",
+        "categoryId": 333,
+        "order": 49,
+        "imgPath": "monsters/AVIS/Frigost/Chevalier.webp"
+    },
+    
+    {
+        "id": "A50",
+        "name": "Culbutoeuf",
+        "zone": "Chateau du Comte Harebourg",
+        "categoryId": 333,
+        "order": 50,
+        "imgPath": "monsters/AVIS/Frigost/Culbutoeuf.webp"
+    },
+    {
+        "id": "A51",
+        "name": "Comte Harebourg",
+        "zone": "Chateau du Comte Harebourg",
+        "categoryId": 333,
+        "order": 51,
+        "imgPath": "monsters/AVIS/Frigost/Harebourg.webp"
+    },
+    {
+        "id": "A52",
+        "name": "Maxi malle",
+        "zone": "Dimensions",
+        "categoryId": 333,
+        "order": 52,
+        "imgPath": "monsters/AVIS/Dimensions/Malle.webp"
+    },
+    {
+        "id": "A53",
+        "name": "Aigripoil",
+        "zone": "Dimensions",
+        "categoryId": 333,
+        "order": 53,
+        "imgPath": "monsters/AVIS/Dimensions/Aigripoil.webp"
+    },
+    {
+        "id": "A54",
+        "name": "Voldelor",
+        "zone": "Dimensions",
+        "categoryId": 333,
+        "order": 54,
+        "imgPath": "monsters/AVIS/Dimensions/Voldelor.webp"
+    },
+    {
+        "id": "A55",
+        "name": "Gein",
+        "zone": "Dimensions",
+        "categoryId": 333,
+        "order": 57,
+        "imgPath": "monsters/AVIS/Dimensions/Gein.webp"
+    },
+    {
+        "id": "A56",
+        "name": "Mouchâme",
+        "zone": "Dimensions",
+        "categoryId": 333,
+        "order": 56,
+        "imgPath": "monsters/AVIS/Dimensions/Mouchame.webp"
+    },
+    {
+        "id": "A57",
+        "name": "Pantèroz",
+        "zone": "Dimensions",
+        "categoryId": 333,
+        "order": 55,
+        "imgPath": "monsters/AVIS/Dimensions/Panteroz.webp"
+    },
+    {
+        "id": "A58",
+        "name": "Morblok",
+        "zone": "Dimensions",
+        "categoryId": 333,
+        "order": 58,
+        "imgPath": "monsters/AVIS/Dimensions/Morblok.webp"
+    },
+    {
+        "id": "A59",
+        "name": "Hin",
+        "zone": "Dimensions",
+        "categoryId": 333,
+        "order": 59,
+        "imgPath": "monsters/AVIS/Dimensions/Hin.webp"
+    },
+    {
+        "id": "A60",
+        "name": "Sicogne",
+        "zone": "Dimensions",
+        "categoryId": 333,
+        "order": 60,
+        "imgPath": "monsters/AVIS/Dimensions/Sicogne.webp"
+    },
+    {
+        "id": "A61",
+        "name": "Atcham",
+        "zone": "Dimensions",
+        "categoryId": 333,
+        "order": 61,
+        "imgPath": "monsters/AVIS/Dimensions/Atcham.webp"
+    }
+    
+    
+]
+
+  
