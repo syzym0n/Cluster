@@ -15,7 +15,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" 
+    className="bg-baseDark text-baseLight">
       <head>
           <link rel="apple-touch-icon" sizes="180x180" href="/icons/iosIcon.png" />
           <link rel="icon" type="image/png" sizes="32x32" href="/icons/32Icon.png"/>
