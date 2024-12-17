@@ -3,7 +3,7 @@ import SignUpInButton from "../signInUpButton/signInUpButton";
 
 export default function LandingHeader() {
     return (
-      <div className="flex justify-between">
+      <div className="flex justify-between my-12 mx-16">
         <Logo />
         <nav className="flex gap-10">
         <SignUpInButton mode={'signup'}/>

@@ -1,10 +1,11 @@
+import LandingBanner from "@/components/landingBanner/landingBanner";
 import LandingHeader from "@/components/landingHeader/landingHeader";
-import Logo from "@/components/logo/logo";
 
 export default function Landing() {
   return (
-    <div>
+    <main className="flex flex-col gap-10">
       <LandingHeader />
-    </div>
+      <LandingBanner/>
+    </main>
   );
 }
