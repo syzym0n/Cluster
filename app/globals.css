@@ -8,12 +8,24 @@
   box-sizing: border-box;
 }
 
+/* Police Monument */
+
+@font-face {
+  font-family: 'Monument Extended';
+  src: url('/fonts/Monument/MonumentExtended-Regular.otf') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+
 @font-face {
   font-family: 'Monument Extended';
   src: url('/fonts/Monument/MonumentExtended-Ultrabold.otf') format('woff2');
   font-weight: 900;
   font-style: normal;
 }
+
+/* Police Visby */
 
 @font-face {
   font-family: 'Visby';
@@ -55,9 +67,4 @@
   src: url('/fonts/Visby/VisbyItalic.otf') format('opentype');
   font-weight: 400;
   font-style: italic;
-}
-
-
-html, body {
-  font-family: 'Monument Extended', sans-serif;
 }

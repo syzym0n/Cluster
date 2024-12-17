@@ -8,6 +8,10 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        monument: ['"Monument Extended"', 'sans-serif'],
+        visby: ['"Visby"', 'sans-serif'],
+      },
       colors: {
         baseDark: "#0F0A0A",
         baseLight: "#FFEDCF",

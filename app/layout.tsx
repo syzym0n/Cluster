@@ -16,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" 
-    className="bg-baseDark text-baseLight">
+    className="bg-baseDark text-baseLight font-monument font-extrabold tracking-wide">
       <head>
           <link rel="apple-touch-icon" sizes="180x180" href="/icons/iosIcon.png" />
           <link rel="icon" type="image/png" sizes="32x32" href="/icons/32Icon.png"/>
