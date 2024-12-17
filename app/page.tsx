@@ -1,10 +1,9 @@
-import Image from "next/image";
+import Logo from "@/components/logo/logo";
 
 export default function Home() {
   return (
     <div>
-      <h1>Cluster</h1>
-      <img src="/icons/basicIcon.png" alt="A server surrounded by magic sparkles." />
+      <Logo />
     </div>
   );
 }
