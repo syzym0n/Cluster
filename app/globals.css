@@ -7,3 +7,57 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+@font-face {
+  font-family: 'Monument Extended';
+  src: url('/fonts/Monument/MonumentExtended-Ultrabold.otf') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Visby';
+  src: url('/fonts/Visby/VisbyThin.otf') format('opentype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Visby';
+  src: url('/fonts/Visby/VisbyLight.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Visby';
+  src: url('/fonts/Visby/VisbyRegular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Visby';
+  src: url('/fonts/Visby/VisbySemibold.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Visby';
+  src: url('/fonts/Visby/VisbyBold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Visby';
+  src: url('/fonts/Visby/VisbyItalic.otf') format('opentype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+
+html, body {
+  font-family: 'Monument Extended', sans-serif;
+}
