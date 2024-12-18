@@ -1,16 +1,13 @@
 "use client";
 
-import Link from "next/link";
 import React, { useState } from "react";
 
-export default function SignInForm() {
+export default function RecuperationForm() {
   const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     console.log("Email:", email);
-    console.log("Password:", password);
   };
 
   return (
@@ -29,17 +26,7 @@ export default function SignInForm() {
             placeholder="Email"
             required
           />
-          <input
-            type="password"
-            id="password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            className="font-visby font-light w-[40dvw] bg-baseDark placeholder-baseLight border-baseLight border rounded-lg p-5"
-            placeholder="Mot de Passe"
-            required
-          />
 
-          <Link href='/recuperation' className="font-visby font-light underline text-center">Mot de passe oublié ?</Link>
         </div>
 
         <button
@@ -47,7 +34,7 @@ export default function SignInForm() {
           className="relative w-40 h-40 cursor-pointer flex items-center justify-center group"
         >
           <p className="absolute z-10 text-center text-xl no-underline whitespace-nowrap group-hover:hidden">
-            SE CONNECTER
+            RÉCUPÉRER SON MOT DE PASSE
           </p>
 
           <img
