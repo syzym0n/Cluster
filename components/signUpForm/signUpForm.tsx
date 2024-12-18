@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import Link from "next/link";
 
 export default function SignInForm() {
   const[nickname, setNickname] = useState("");
@@ -59,6 +60,25 @@ export default function SignInForm() {
             placeholder="Confirmer Mot de Passe"
             required
           />
+
+        <div className="flex items-center gap-4 mt-4">
+          <input
+            type="checkbox"
+            id="cgu"
+            className="w-5 h-5 bg-baseDark accent-baseGreen"
+            required
+          />
+          
+          <label
+            htmlFor="cgu"
+            className="text-lg font-light font-visby text-baseLight"
+          >
+            J'accepte les <Link href="/administrative/cgu.pdf" className="text-baseGreen underline">
+              Conditions Générales d'Utilisation
+            </Link> de Dofus Cluster.
+          </label>
+        </div>
+
         </div>
         
 
