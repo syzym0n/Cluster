@@ -6,8 +6,8 @@ export default function LandingHeader() {
       <header className="flex justify-between items-center mx-16 h-[15dvh]">
         <Logo />
         <nav className="flex gap-10">
-        <SignUpInButton mode={'signup'}/>
         <SignUpInButton mode={'signin'}/>
+        <SignUpInButton mode={'signup'}/>
         </nav>
       </header>
     );

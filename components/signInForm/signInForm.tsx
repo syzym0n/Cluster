@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import React, { useState } from "react";
 
@@ -18,7 +18,7 @@ export default function SignInForm() {
         onSubmit={handleSubmit}
         className="flex flex-col justify-center items-center gap-24"
       >
-        <div className="flex flex-col gap-12 pt-14">     
+        <div className="flex flex-col gap-12 pt-14">
           <input
             type="email"
             id="email"
@@ -39,25 +39,26 @@ export default function SignInForm() {
           />
         </div>
 
-              <button
-        type="submit"
-        className="relative w-40 h-40 cursor-pointer flex items-center justify-center"
-      >
+        <button
+          type="submit"
+          className="relative w-40 h-40 cursor-pointer flex items-center justify-center group"
+        >
+          <p className="absolute z-10 text-center text-xl no-underline whitespace-nowrap">
+            SE CONNECTER
+          </p>
 
-        <p className="absolute z-10 text-center text-xl no-underline whitespace-nowrap">
-          SE CONNECTER
-        </p>
+          <img
+            src="/assets/transparentLogo.png"
+            alt="Logo Cluster"
+            className="absolute w-28 h-28 object-contain z-0 group-hover:hidden"
+          />
 
-        <img
-          src="/assets/transparentLogo.png"
-          alt="Logo Cluster"
-          className="absolute w-28 h-28 object-contain z-0"
-        />
-
-      </button>
-
-
-
+          <img
+            src="/assets/transparentLogoActive.png"
+            alt="Logo Cluster"
+            className="absolute w-28 h-28 object-contain z-0 hidden group-hover:block"
+          />
+        </button>
       </form>
     </div>
   );
