@@ -2,8 +2,9 @@
 
 import { useEffect, useState } from "react";
 
-import HomeHeader from "@/components/homePage/homeHeader/homeHeader";
-import HomeFilterbar from "@/components/homePage/homeFilterbar/homeFilterbar";
+import HomeHeader from "@/components/homePage/header/homeHeader/homeHeader";
+import HomeFilterbar from "@/components/homePage/centralFilter/homeFilterbar/homeFilterbar";
+import HomeTypeFilter from "@/components/homePage/centralFilter/homeTypeFilter/homeTypeFilter";
 
 
 
@@ -52,6 +53,8 @@ export default function Home() {
             filteredClass={filteredClass}
             setFilteredClass={setFilteredClass} 
         />
+        <HomeTypeFilter />
+
         </div>
     );
 }

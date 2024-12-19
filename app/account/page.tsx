@@ -1,4 +1,3 @@
-import HomeHeader from "@/components/homePage/homeHeader/homeHeader"
 import Logo from "@/components/logo/logo"
 
 export default function Account() {
