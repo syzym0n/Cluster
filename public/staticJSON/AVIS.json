@@ -185,19 +185,19 @@
     },
     {
         "id": "A23",
-        "name": "Ali Grothor",
-        "zone": "Justiciers",
-        "categoryId": 333,
-        "order": 24,
-        "imgPath": "monsters/AVIS/Justiciers/Ali.webp"
-    },
-    {
-        "id": "A24",
         "name": "Les Guman",
         "zone": "Justiciers",
         "categoryId": 333,
         "order": 23,
         "imgPath": "monsters/AVIS/Justiciers/Guman.webp"
+    },
+    {
+        "id": "A24",
+        "name": "Ali Grothor",
+        "zone": "Justiciers",
+        "categoryId": 333,
+        "order": 24,
+        "imgPath": "monsters/AVIS/Justiciers/Ali.webp"
     },
     {
         "id": "A25",

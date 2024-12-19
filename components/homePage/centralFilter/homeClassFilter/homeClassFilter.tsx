@@ -27,7 +27,7 @@ export default function HomeClassFilter({ classOrder, filteredClass, setFiltered
                     return (
                         <button
                             key={classRegistration}
-                            className={`transition-all duration-1000 transform ${isSelected ? 'scale-150' : 'scale-100'} ${opacityClass}`}
+                            className={`transition-all duration-200 transform ${isSelected ? 'scale-150' : 'scale-100'} ${opacityClass}`}
                             onClick={() => handleClick(classRegistration)} 
                         >
                             <img
