@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 
 import HomeHeader from "@/components/homePage/header/homeHeader/homeHeader";
-import HomeFilterbar from "@/components/homePage/centralFilter/homeFilterbar/homeFilterbar";
+import HomeClassFilter from "@/components/homePage/centralFilter/homeClassFilter/homeClassFilter";
 import HomeTypeFilter from "@/components/homePage/centralFilter/homeTypeFilter/homeTypeFilter";
 
 
@@ -14,8 +14,11 @@ export default function Home() {
     const [loading, setLoading] = useState<boolean>(true);
     const [error, setError] = useState<string | null>(null); 
 
-    const [filteredClass, setFilteredClass] = useState<string>("all");
     const [search, setSearch] = useState<string>("");
+    const [filteredClass, setFilteredClass] = useState<string>("all");
+
+    const [filteredType, setFilteredType] = useState<string>("emma");
+    const [filteredTypePlus, setFilteredTypePlus] = useState<number>(0);
 
     useEffect(() => {
         const fetchFrontData = async () => {
@@ -48,12 +51,17 @@ export default function Home() {
         search={search}
         setSearch={setSearch}
         />
-        <HomeFilterbar 
+        <HomeClassFilter 
             classOrder={frontData[0].classOrder}
             filteredClass={filteredClass}
             setFilteredClass={setFilteredClass} 
         />
-        <HomeTypeFilter />
+        <HomeTypeFilter 
+            filteredType={filteredType}
+            setFilteredType={setFilteredType}
+            filteredTypePlus={filteredTypePlus}
+            setFilteredTypePlus={setFilteredTypePlus}  
+        />
 
         </div>
     );

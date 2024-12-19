@@ -1,10 +1,10 @@
-interface HomeFilterbarProps {
+interface HomeClassFilterProps {
     classOrder: string[]; 
     filteredClass: string;
     setFilteredClass: (value: string) => void;
 }
 
-export default function HomeFilterbar({ classOrder, filteredClass, setFilteredClass }: HomeFilterbarProps) {
+export default function HomeClassFilter({ classOrder, filteredClass, setFilteredClass }: HomeClassFilterProps) {
 
       const handleClick = (classRegistration: string) => {
         if (filteredClass === classRegistration) {
@@ -27,7 +27,7 @@ export default function HomeFilterbar({ classOrder, filteredClass, setFilteredCl
                     return (
                         <button
                             key={classRegistration}
-                            className={`transition-all duration-200 transform ${isSelected ? 'scale-150' : 'scale-100'} ${opacityClass}`}
+                            className={`transition-all duration-1000 transform ${isSelected ? 'scale-150' : 'scale-100'} ${opacityClass}`}
                             onClick={() => handleClick(classRegistration)} 
                         >
                             <img
@@ -39,7 +39,7 @@ export default function HomeFilterbar({ classOrder, filteredClass, setFilteredCl
                     );
                 })}
             </div>
-                <p className="text-lg">FILTRER</p>
+                <p className="text-lg font-visby font-light">FILTRER</p>
         </div>
     );
 }
