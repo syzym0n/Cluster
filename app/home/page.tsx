@@ -36,11 +36,11 @@ export default function Home() {
     if (loading) return <p>Chargement...</p>;
     if (error) return <p>Erreur: {error}</p>;
 
-    const DataFetch = frontData.length > 0 ? frontData[0] : "Rien trouvé";
+    const DataFetch = frontData.length > 0 ? frontData[0].nickname : "Rien trouvé";
 
     return (
         <div>
-        <HomeHeader />
+        <HomeHeader nickname={frontData[0].nickname} />
         <h1>Home</h1>
         <p className="text-sm font-light font-visby">{typeof DataFetch === "object" ? JSON.stringify(DataFetch, null, 2) : DataFetch}</p>
         </div>
