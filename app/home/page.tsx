@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 
 import HomeHeader from "@/components/homePage/homeHeader/homeHeader";
-import HomeSearchbar from "@/components/homePage/homeSearchbar/homeSearchbar";
+import HomeFilterbar from "@/components/homePage/homeFilterbar/homeFilterbar";
 
 
 
@@ -44,13 +44,13 @@ export default function Home() {
         <div>
         <HomeHeader 
         nickname={frontData[0].nickname}
-        classOrder={frontData[0].classOrder}
-        filteredClass={filteredClass}
-        setFilteredClass={setFilteredClass}
-        />
-        <HomeSearchbar 
         search={search}
         setSearch={setSearch}
+        />
+        <HomeFilterbar 
+            classOrder={frontData[0].classOrder}
+            filteredClass={filteredClass}
+            setFilteredClass={setFilteredClass} 
         />
         </div>
     );

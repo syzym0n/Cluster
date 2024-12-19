@@ -16,8 +16,8 @@ export default function HomeFilterbar({ classOrder, filteredClass, setFilteredCl
 
     
     return (
-        <div className="relative">
-            <div className="flex items-center border-baseLight border-[1px] rounded-xl p-1 overflow-visible">
+        <div className="flex flex-col items-center">
+            <div className="flex items-center border-baseLight border-2 rounded-2xl p-1 overflow-visible w-[70dvw]">
                 {classOrder.map((classRegistration) => {
 
                     const isSelected = filteredClass === classRegistration;
@@ -33,13 +33,13 @@ export default function HomeFilterbar({ classOrder, filteredClass, setFilteredCl
                             <img
                                 src={`/class/${classRegistration}.png`}
                                 alt={`Classe ${classRegistration}`}
-                                className="w-8 h-8 object-cover rounded-lg"
+                                className="object-cover rounded-lg"
                             />
                         </button>
                     );
                 })}
             </div>
-            <p className="absolute right-0 text-sm">FILTRER</p>
+                <p className="text-lg">FILTRER</p>
         </div>
     );
 }
