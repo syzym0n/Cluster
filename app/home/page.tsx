@@ -42,6 +42,7 @@ export default function Home() {
         <div>
         <HomeHeader 
         nickname={frontData[0].nickname}
+        classOrder={frontData[0].classOrder}
         filteredClass={filteredClass}
         setFilteredClass={setFilteredClass} 
         />

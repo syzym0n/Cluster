@@ -1,16 +1,10 @@
 interface HomeFilterbarProps {
+    classOrder: string[]; 
     filteredClass: string;
     setFilteredClass: (value: string) => void;
 }
 
-export default function HomeFilterbar({ filteredClass, setFilteredClass }: HomeFilterbarProps) {
-
-    const classIcons = [ 
-        "class/Cra.png", "class/Eca.png", "class/Eli.png", "class/Eni.png", "class/Enu.png", 
-        "class/Fec.png", "class/For.png", "class/Hup.png", "class/Iop.png", "class/Osa.png", 
-        "class/Oug.png", "class/Pan.png", "class/Rou.png", "class/Sac.png", "class/Sad.png", 
-        "class/Sra.png", "class/Ste.png", "class/Xel.png", "class/Zoz.png" 
-      ]
+export default function HomeFilterbar({ classOrder, filteredClass, setFilteredClass }: HomeFilterbarProps) {
 
       const handleClick = (classRegistration: string) => {
         if (filteredClass === classRegistration) {
@@ -24,9 +18,10 @@ export default function HomeFilterbar({ filteredClass, setFilteredClass }: HomeF
     return (
         <div className="relative">
             <div className="flex items-center border-baseLight border-[1px] rounded-xl p-1 overflow-visible">
-                {classIcons.map((icon) => {
-                    const classRegistration = icon.slice(6, 9);
+                {classOrder.map((classRegistration) => {
+
                     const isSelected = filteredClass === classRegistration;
+
                     const opacityClass = filteredClass === "all" ? "opacity-100" : (isSelected ? "opacity-100" : "opacity-30");
 
                     return (
@@ -36,7 +31,7 @@ export default function HomeFilterbar({ filteredClass, setFilteredClass }: HomeF
                             onClick={() => handleClick(classRegistration)} 
                         >
                             <img
-                                src={`/${icon}`}
+                                src={`/class/${classRegistration}.png`}
                                 alt={`Classe ${classRegistration}`}
                                 className="w-8 h-8 object-cover rounded-lg"
                             />
