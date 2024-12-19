@@ -1,5 +1,6 @@
 [
     {
+        "id":0,
         "nickname": "Caillan",
         "email": "caillan@gmail.com",
         "hashpassword" : "flfgjkgjkrtjfbn233DMdlfELFD'rmvcv:",
@@ -46,7 +47,7 @@
             "Xel" : 1,
             "Zoz" : 1
         },
-        
+
         "avis": {
             "A0": {"Cra": false, "Eca": false, "Eli": false, "Eni": false, "Enu": false, "Fec": false, "For": false, "Hup": false, "Iop": false, "Osa": false, "Oug": false, "Pan": false, "Roub": false, "Sac": false, "Sad": false, "Sra": false, "Ste": false, "Xel": false, "Zoz": false},
             "A1": {"Cra": false, "Eca": false, "Eli": false, "Eni": false, "Enu": false, "Fec": false, "For": false, "Hup": false, "Iop": false, "Osa": false, "Oug": false, "Pan": false, "Roub": false, "Sac": false, "Sad": false, "Sra": false, "Ste": false, "Xel": false, "Zoz": false},
@@ -109,7 +110,7 @@
             "A58": {"Cra": false, "Eca": false, "Eli": false, "Eni": false, "Enu": false, "Fec": false, "For": false, "Hup": false, "Iop": false, "Osa": false, "Oug": false, "Pan": false, "Roub": false, "Sac": false, "Sad": false, "Sra": false, "Ste": false, "Xel": false, "Zoz": false},
             "A59": {"Cra": false, "Eca": false, "Eli": false, "Eni": false, "Enu": false, "Fec": false, "For": false, "Hup": false, "Iop": false, "Osa": false, "Oug": false, "Pan": false, "Roub": false, "Sac": false, "Sad": false, "Sra": false, "Ste": false, "Xel": false, "Zoz": false},
             "A60": {"Cra": false, "Eca": false, "Eli": false, "Eni": false, "Enu": false, "Fec": false, "For": false, "Hup": false, "Iop": false, "Osa": false, "Oug": false, "Pan": false, "Roub": false, "Sac": false, "Sad": false, "Sra": false, "Ste": false, "Xel": false, "Zoz": false},
-            "A61": {"Cra": false, "Eca": false, "Eli": false, "Eni": false, "Enu": false, "Fec": false, "For": false, "Hup": false, "Iop": false, "Osa": false, "Oug": false, "Pan": false, "Roub": false, "Sac": false, "Sad": false, "Sra": false, "Ste": false, "Xel": false, "Zoz": false},
+            "A61": {"Cra": false, "Eca": false, "Eli": false, "Eni": false, "Enu": false, "Fec": false, "For": false, "Hup": false, "Iop": false, "Osa": false, "Oug": false, "Pan": false, "Roub": false, "Sac": false, "Sad": false, "Sra": false, "Ste": false, "Xel": false, "Zoz": false}
         }
           
     }
