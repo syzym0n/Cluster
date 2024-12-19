@@ -12,7 +12,7 @@ export default function Home() {
     const [loading, setLoading] = useState<boolean>(true);
     const [error, setError] = useState<string | null>(null); 
 
-    /* const [filteredClass, setFilteredClass] = useState<string>(""); */
+    const [filteredClass, setFilteredClass] = useState<string>("");
 
     useEffect(() => {
         const fetchFrontData = async () => {
@@ -40,7 +40,11 @@ export default function Home() {
 
     return (
         <div>
-        <HomeHeader nickname={frontData[0].nickname} />
+        <HomeHeader 
+        nickname={frontData[0].nickname}
+        filteredClass={filteredClass}
+        setFilteredClass={setFilteredClass} 
+        />
         <h1>Home</h1>
         <p className="text-sm font-light font-visby">{typeof DataFetch === "object" ? JSON.stringify(DataFetch, null, 2) : DataFetch}</p>
         </div>

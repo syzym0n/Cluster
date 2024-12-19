@@ -4,7 +4,7 @@
         "nickname": "Caillan",
         "email": "caillan@gmail.com",
         "hashpassword" : "flfgjkgjkrtjfbn233DMdlfELFD'rmvcv:",
-        "classorder" : ["Cra", "Eca", "Eli", "Eni","Enu", "Fec", "For", "Hup", "Iop", "Osa", "Oug","Pan", "Roub", "Sac", "Sad", "Sra", "Ste", "Xel","Zoz"],
+        "classorder" : ["Cra", "Eca", "Eli", "Eni","Enu", "Fec", "For", "Hup", "Iop", "Osa", "Oug","Pan", "Rou", "Sac", "Sad", "Sra", "Ste", "Xel","Zoz"],
         "emmastep" : {
             "Cra" : 1, 
             "Eca" : 1, 
