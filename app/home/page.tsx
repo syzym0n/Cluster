@@ -18,6 +18,10 @@ export default function Home() {
     const [filteredType, setFilteredType] = useState<string>("emma");
     const [filteredTypePlus, setFilteredTypePlus] = useState<number>(0);
 
+    const [emmaData, setEmmaData] = useState<any>([]);
+    const [metagData, setMetagData] = useState<any>([]);
+    const [avisData, setAvisData] = useState<any>([]);
+
 
     const fetchStaticData = async () => {
         const staticDataFiles = [
@@ -45,7 +49,8 @@ export default function Home() {
                 })
             );
 
-            setStaticData(jsonData);
+            setStaticData(jsonData); 
+
         } catch (err: any) {
             setError(err.message);
         } finally {
@@ -61,6 +66,7 @@ export default function Home() {
             }
             const jsonData = await response.json();
             setFrontData(jsonData);
+
         } catch (err: any) {
             setError(err.message);
         }
@@ -68,7 +74,6 @@ export default function Home() {
 
     useEffect(() => {
         fetchStaticData();
-        console.log(staticData);
     }, []); 
 
    
@@ -78,10 +83,32 @@ export default function Home() {
         }
     }, [frontData]);
 
+    useEffect(() => {
+        if (staticData) {
+            const filteredEmmaData = staticData.flat().filter((item: any) => 
+                item.emmaOrder !== null && item.categoryId !== 333
+            );
+            setEmmaData(filteredEmmaData);
+
+            const filteredMetagData = staticData.flat().filter((item: any) => 
+                item.metagOrder !== null && item.categoryId !== 333
+            );
+            setMetagData(filteredMetagData);
+
+            const filteredAvisData = staticData.flat().filter((item: any) => 
+                item.categoryId === 333
+            );
+            setAvisData(filteredAvisData);
+        }
+    }, [staticData]);
+
     if (loading) return <p>Chargement...</p>;
     if (error) return <p>Erreur: {error}</p>;
 
-    
+ 
+
+    console.log(emmaData, metagData, avisData);
+
 
     return (
         <div>
