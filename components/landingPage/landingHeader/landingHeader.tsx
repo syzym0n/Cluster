@@ -1,5 +1,5 @@
-import Logo from "../logo/logo";
-import SignUpInButton from "../signInUpButton/signInUpButton";
+import Logo from "../../logo/logo";
+import SignUpInButton from "../../signInUpLogic/signInUpButton/signInUpButton";
 
 export default function LandingHeader() {
     return (

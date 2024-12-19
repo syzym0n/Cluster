@@ -1,5 +1,5 @@
-import LandingHeader from "@/components/landingHeader/landingHeader";
-import SignUpForm from "@/components/signUpForm/signUpForm"
+import LandingHeader from "@/components/landingPage/landingHeader/landingHeader";
+import SignUpForm from "@/components/signInUpLogic/signUpForm/signUpForm"
 
 export default function SignUpPage() {
     return (

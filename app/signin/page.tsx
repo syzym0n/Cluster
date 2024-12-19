@@ -1,5 +1,5 @@
-import LandingHeader from "@/components/landingHeader/landingHeader";
-import SignInForm from "@/components/signInForm/signInForm";
+import LandingHeader from "@/components/landingPage/landingHeader/landingHeader";
+import SignInForm from "@/components/signInUpLogic/signInForm/signInForm";
 
 export default function SignInPage() {
     return (

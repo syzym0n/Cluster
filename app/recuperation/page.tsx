@@ -1,5 +1,5 @@
-import LandingHeader from "@/components/landingHeader/landingHeader";
-import RecuperationForm from "@/components/recuperationForm/recuperationForm";
+import LandingHeader from "@/components/landingPage/landingHeader/landingHeader";
+import RecuperationForm from "@/components/signInUpLogic/recuperationForm/recuperationForm";
 
 export default function RecuperationPage() {
     return (
