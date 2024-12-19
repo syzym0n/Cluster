@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 
 import HomeHeader from "@/components/homePage/homeHeader/homeHeader";
+import HomeSearchbar from "@/components/homePage/homeSearchbar/homeSearchbar";
 
 
 
@@ -13,6 +14,7 @@ export default function Home() {
     const [error, setError] = useState<string | null>(null); 
 
     const [filteredClass, setFilteredClass] = useState<string>("all");
+    const [search, setSearch] = useState<string>("");
 
     useEffect(() => {
         const fetchFrontData = async () => {
@@ -44,10 +46,12 @@ export default function Home() {
         nickname={frontData[0].nickname}
         classOrder={frontData[0].classOrder}
         filteredClass={filteredClass}
-        setFilteredClass={setFilteredClass} 
+        setFilteredClass={setFilteredClass}
         />
-        <h1>Home</h1>
-        <p className="text-sm font-light font-visby">{typeof DataFetch === "object" ? JSON.stringify(DataFetch, null, 2) : DataFetch}</p>
+        <HomeSearchbar 
+        search={search}
+        setSearch={setSearch}
+        />
         </div>
     );
 }
