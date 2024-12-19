@@ -1,16 +1,20 @@
 "use client";
 
-import Link from "next/link";
 import React, { useState } from "react";
+import { useRouter } from 'next/navigation';
+import Link from "next/link";
+
 
 export default function SignInForm() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const router = useRouter();
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     console.log("Email:", email);
     console.log("Password:", password);
+    router.push('/home');
   };
 
   return (

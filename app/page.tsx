@@ -4,10 +4,10 @@ import LandingHeader from "@/components/landingHeader/landingHeader";
 
 export default function Landing() {
   return (
-    <main className="flex flex-col h-dvh overflow-hidden">
+    <div className="flex flex-col h-dvh overflow-hidden">
       <LandingHeader />
       <LandingBanner/>
       <LandingFooter />
-    </main>
+    </div>
   );
 }
