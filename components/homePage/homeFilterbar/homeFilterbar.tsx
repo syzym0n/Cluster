@@ -23,7 +23,7 @@ export default function HomeFilterbar({ filteredClass, setFilteredClass }: HomeF
     
     return (
         <div className="relative">
-            <div className="flex items-center">
+            <div className="flex items-center border-baseLight border-[1px] rounded-xl p-1 overflow-visible">
                 {classIcons.map((icon) => {
                     const classRegistration = icon.slice(6, 9);
                     const isSelected = filteredClass === classRegistration;
@@ -31,13 +31,13 @@ export default function HomeFilterbar({ filteredClass, setFilteredClass }: HomeF
                     return (
                         <button
                             key={classRegistration}
-                            className={`transition-all duration-200 ${isSelected ? 'w-12 h-12' : 'w-8 h-8'} ${!isSelected ? 'opacity-30' : ''}`}
+                            className={`transition-all duration-200 transform ${isSelected ? 'scale-150' : 'scale-100'} ${!isSelected ? 'opacity-30' : ''}`}
                             onClick={() => handleClick(classRegistration)} 
                         >
                             <img
                                 src={`/${icon}`}
                                 alt={`Classe ${classRegistration}`}
-                                className="w-full h-full object-cover rounded-lg"
+                                className="w-8 h-8 object-cover rounded-lg"
                             />
                         </button>
                     );

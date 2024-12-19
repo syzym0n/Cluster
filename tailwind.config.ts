@@ -18,6 +18,9 @@ export default {
         baseGreen: "#A2D544",
         baseRed: "#FF4031",
       },
+      scale: {
+        '150': '1.5',
+      }
     },
   },
   plugins: [],
