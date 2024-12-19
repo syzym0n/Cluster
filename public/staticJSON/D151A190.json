@@ -6,7 +6,7 @@
     "order": 0,
     "boss": "Kimbo",
     "challenge": ["Classique", "Statue", "Premier", "Duo", "Spécial"],
-    "emmaOrder": 25,
+    "emmaOrder": 26,
     "metagOrder": null,
     "imgPath": "monsters/D151A190/Kimbo.webp"
   },
@@ -18,7 +18,7 @@
     "boss": "Minotot",
     "challenge": ["Classique", "Circulez", "Premier", "Duo", "Spécial"],
     "emmaOrder": null,
-    "metagOrder": 25,
+    "metagOrder": 26,
     "imgPath": "monsters/D151A190/Minotot.webp"
   },
   {
@@ -127,7 +127,7 @@
     "order": 11,
     "boss": "Kralamoure Géant",
     "challenge": ["Classique", "Nomade", "Blitzkrieg", "Duo", "Spécial"],
-    "emmaOrder": 28,
+    "emmaOrder": 29,
     "metagOrder": null,
     "imgPath": "monsters/D151A190/Kralamoure.webp"
   },
@@ -139,7 +139,7 @@
     "boss": "Bworker",
     "challenge": ["Classique", "Hardi", "Blitzkrieg", "Duo", "Spécial"],
     "emmaOrder": null,
-    "metagOrder": 26,
+    "metagOrder": 27,
     "imgPath": "monsters/D151A190/Bworker.webp"
   },
   {
@@ -149,7 +149,7 @@
     "order": 13,
     "boss": "Ougah",
     "challenge": ["Classique", "Collant", "Dernier", "Duo", "Spécial"],
-    "emmaOrder": 26,
+    "emmaOrder": 27,
     "metagOrder": null,
     "imgPath": "monsters/D151A190/Ougah.webp"
   },

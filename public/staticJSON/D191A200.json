@@ -72,7 +72,7 @@
     "order": 6,
     "boss": "Merkator",
     "challenge": ["Classique", "Dernier", "Mystique", "Duo", "Spécial"],
-    "emmaOrder": 27,
+    "emmaOrder": 28,
     "metagOrder": null,
     "imgPath": "monsters/D190A200/Merkator.webp"
   },

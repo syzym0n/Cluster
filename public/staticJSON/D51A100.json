@@ -39,7 +39,7 @@
     "order": 3,
     "boss": "Gelées Royales",
     "challenge": ["Classique", "Duel", "Collant", "Duo", "Spécial"],
-    "emmaOrder": null,
+    "emmaOrder": 10,
     "metagOrder": null,
     "imgPath": "monsters/D51A100/Gelee.webp"
   },
@@ -50,7 +50,7 @@
     "order": 4,
     "boss": "Nelween",
     "challenge": ["Classique", "Dernier", "Misanthrope", "Duo", "Spécial"],
-    "emmaOrder": 12,
+    "emmaOrder": 13,
     "metagOrder": null,
     "imgPath": "monsters/D51A100/Nelween.webp"
   },
@@ -61,7 +61,7 @@
     "order": 5,
     "boss": "Gourlo le Terrible",
     "challenge": ["Classique", "Premier", "Économe", "Duo", "Spécial"],
-    "emmaOrder": 10,
+    "emmaOrder": 12,
     "metagOrder": null,
     "imgPath": "monsters/D51A100/Gourlo.webp"
   },
@@ -94,7 +94,7 @@
     "order": 8,
     "boss": "Wa Wobot",
     "challenge": ["Classique", "Mains Propres", "Blitzkrieg", "Duo", "Spécial"],
-    "emmaOrder": 14,
+    "emmaOrder": 15,
     "metagOrder": null,
     "imgPath": "monsters/D51A100/Wobot.webp"
   },
@@ -105,7 +105,7 @@
     "order": 9,
     "boss": "Mantiscore",
     "challenge": ["Classique", "Mains Propres", "Zombie", "Duo", "Spécial"],
-    "emmaOrder": 13,
+    "emmaOrder": 14,
     "metagOrder": null,
     "imgPath": ""
   },
@@ -116,7 +116,7 @@
     "order": 10,
     "boss": "Reine Nyée",
     "challenge": ["Classique", "Premier", "Hardi", "Duo", "Spécial"],
-    "emmaOrder": 17,
+    "emmaOrder": 18,
     "metagOrder": null,
     "imgPath": "monsters/D51A100/Nyee.webp"
   },
@@ -138,7 +138,7 @@
     "order": 12,
     "boss": "Le Chouque",
     "challenge": ["Classique", "Dernier", "Nomade", "Duo", "Spécial"],
-    "emmaOrder": 15,
+    "emmaOrder": 16,
     "metagOrder": null,
     "imgPath": "monsters/D51A100/Chouque.webp"
   },
@@ -149,7 +149,7 @@
     "order": 13,
     "boss": "Choudini",
     "challenge": ["Classique", "Collant", "Hardi", "Duo", "Spécial"],
-    "emmaOrder": 16,
+    "emmaOrder": 17,
     "metagOrder": null,
     "imgPath": "monsters/D51A100/Choudini.webp"
   },
@@ -193,7 +193,7 @@
     "order": 17,
     "boss": "Moon",
     "challenge": ["Classique", "Versatile", "Statue", "Duo", "Spécial"],
-    "emmaOrder": 20,
+    "emmaOrder": 21,
     "metagOrder": null,
     "imgPath": "monsters/D51A100/Moon.webp"
   },
@@ -204,7 +204,7 @@
     "order": 18,
     "boss": "Maître des Pantins",
     "challenge": ["Classique", "Statue", "Mains Propres", "Duo", "Spécial"],
-    "emmaOrder": 19,
+    "emmaOrder": 20,
     "metagOrder": null,
     "imgPath": "monsters/D51A100/Pantin.webp"
   },
@@ -226,7 +226,7 @@
     "order": 20,
     "boss": "Kharnozor",
     "challenge": ["Classique", "Dernier", "Circulez", "Duo", "Spécial"],
-    "emmaOrder": 18,
+    "emmaOrder": 19,
     "metagOrder": null,
     "imgPath": "monsters/D51A100/Kharnozor.webp"
   }

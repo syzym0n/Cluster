@@ -6,7 +6,7 @@
     "order": 0,
     "boss": "Silf le Rasboul Majeur",
     "challenge": ["Classique", "Premier", "Temps qui court", "Duo", "Spécial"],
-    "emmaOrder": 21,
+    "emmaOrder": 22,
     "metagOrder": null,
     "imgPath": "monsters/D101A150/Rasboul.webp"
   },
@@ -72,7 +72,7 @@
     "order": 6,
     "boss": "Blop Multicolore Royal",
     "challenge": ["Classique", "Hardi", "Duel", "Duo", "Spécial"],
-    "emmaOrder": 22,
+    "emmaOrder": 23,
     "metagOrder": null,
     "imgPath": "monsters/D101A150/Multi.webp"
   },
@@ -112,7 +112,7 @@
     "boss": "Tofu Royal",
     "challenge": ["Classique", "Dernier", "Statue", "Duo", "Spécial"],
     "emmaOrder": null,
-    "metagOrder": null,
+    "metagOrder": 20,
     "imgPath": "monsters/D101A150/Tofu.webp"
   },
   {
@@ -123,7 +123,7 @@
     "boss": "Crocabulia",
     "challenge": ["Classique", "Statue", "Versatile", "Duo", "Spécial"],
     "emmaOrder": null,
-    "metagOrder": 20,
+    "metagOrder": 21,
     "imgPath": "monsters/D101A150/Crocabulia.webp"
   },
   {
@@ -134,7 +134,7 @@
     "boss": "Skeunk",
     "challenge": ["Classique", "Statue", "Blitzkrieg", "Duo", "Spécial"],
     "emmaOrder": null,
-    "metagOrder": 21,
+    "metagOrder": 22,
     "imgPath": "monsters/D101A150/Skeunk.webp"
   },
   {
@@ -200,7 +200,7 @@
     "boss": "Tanukouï San",
     "challenge": ["Classique", "Statue", "Versatile", "Duo", "Spécial"],
     "emmaOrder": null,
-    "metagOrder": 22,
+    "metagOrder": 23,
     "imgPath": "monsters/D101A150/Tanukoui.webp"
   },
   {
@@ -211,7 +211,7 @@
     "boss": "Chêne Mou",
     "challenge": ["Classique", "Liberté", "Premier", "Duo", "Spécial"],
     "emmaOrder": null,
-    "metagOrder": 24,
+    "metagOrder": 25,
     "imgPath": "monsters/D101A150/Chene.webp"
   },
   {
@@ -221,7 +221,7 @@
     "order": 19,
     "boss": "Tynrils",
     "challenge": ["Classique", "Intouchable", "Zombie", "Duo", "Spécial"],
-    "emmaOrder": 23,
+    "emmaOrder": 24,
     "metagOrder": null,
     "imgPath": "monsters/D101A150/Tynril.webp"
   },
@@ -255,7 +255,7 @@
     "boss": "Founoroshi",
     "challenge": ["Classique", "Prudent", "Collant", "Duo", "Spécial"],
     "emmaOrder": null,
-    "metagOrder": 23,
+    "metagOrder": 24,
     "imgPath": "monsters/D101A150/Founoroshi.webp"
   },
   {
@@ -276,7 +276,7 @@
     "order": 24,
     "boss": "Sphincter Cell",
     "challenge": ["Classique", "Hardi", "Dernier", "Duo", "Spécial"],
-    "emmaOrder": 24,
+    "emmaOrder": 25,
     "metagOrder": null,
     "imgPath": "monsters/D101A150/Sphincter.webp"
   },
