@@ -12,7 +12,7 @@ export default function Home() {
     const [loading, setLoading] = useState<boolean>(true);
     const [error, setError] = useState<string | null>(null); 
 
-    const [filteredClass, setFilteredClass] = useState<string>("");
+    const [filteredClass, setFilteredClass] = useState<string>("all");
 
     useEffect(() => {
         const fetchFrontData = async () => {
