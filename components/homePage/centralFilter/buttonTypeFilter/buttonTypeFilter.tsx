@@ -8,9 +8,13 @@ interface buttonTypeFilterProps {
 
 export default function buttonTypeFilter({filteredType, filteredTypePlus, setFilteredTypePlus}: buttonTypeFilterProps) {
 
-    const emmaContentButton = ["Première Édition", "Donjons Avancés", "Donjons 3.5", "Siège de Donjons", "Tornades de Donjons"]
-    const metagContentButton = ["Start", "Sbires du Maître", "Juge Hystérique", "Encore des Donjons", "Voie du Guerrier"]
-    const avisContentButton = ["Astrub", "Amakna", "Justiciers", "Sufokia", "Saharach", "Bourgade", "Village Enseveli", "Chateau du Comte Harebourg", "Dimensions"]
+    const emmaContentButton = ["Première Édition", "Donjons Avancés", "Donjons 3.5", "Siège de Donjons", "Tornades de Donjons"];
+    const metagContentButton = ["Start", "Sbires du Maître", "Juge Hystérique", "Encore des Donjons", "Voie du Guerrier"];
+    const avisContentButton = ["Astrub", "Amakna", "Justiciers", "Sufokia", "Saharach", "Bourgade", "Village Enseveli", "Chateau du Comte Harebourg", "Dimensions"];
+
+    const stepEmma = [1, 7, 13, 18, 24];
+    const stepMetag = [1, 5, 11, 17, 22];
+    const stepAvis = [0, 11, 23, 28, 31, 35, 42, 46, 52];
 
     let options: string[] = [];
 
