@@ -60,7 +60,7 @@ export default function Home() {
 
     const fetchFrontData = async () => {
         try {
-            const response = await fetch("/frontendDataTest.json"); // Exemple de fetch pour des données modulables
+            const response = await fetch("/frontendDataTest.json");
             if (!response.ok) {
                 throw new Error(`Erreur: ${response.status}`);
             }

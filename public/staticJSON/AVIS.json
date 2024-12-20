@@ -5,6 +5,8 @@
         "zone": "Astrub",
         "categoryId": 333,
         "order": 0,
+        "emmaOrder": null,
+        "metagOrder": null,
         "imgPath": "monsters/AVIS/Astrub/Fouduglen.webp"
     },
     {
@@ -13,6 +15,8 @@
         "zone": "Astrub",
         "categoryId": 333,
         "order": 1,
+        "emmaOrder": null,
+        "metagOrder": null,
         "imgPath": "monsters/AVIS/Astrub/Frakacia.webp"
     },
     {
@@ -21,6 +25,8 @@
         "zone": "Astrub",
         "categoryId": 333,
         "order": 2,
+        "emmaOrder": null,
+        "metagOrder": null,
         "imgPath": "monsters/AVIS/Astrub/Ogivol.webp"
     },
     {
@@ -29,6 +35,8 @@
         "zone": "Astrub",
         "categoryId": 333,
         "order": 3,
+        "emmaOrder": null,
+        "metagOrder": null,
         "imgPath": "monsters/AVIS/Astrub/Brumen.webp"
     },
     {
@@ -37,6 +45,8 @@
         "zone": "Astrub",
         "categoryId": 333,
         "order": 4,
+        "emmaOrder": null,
+        "metagOrder": null,
         "imgPath": "monsters/AVIS/Astrub/Qil.webp"
     },
     {
@@ -45,6 +55,8 @@
         "zone": "Astrub",
         "categoryId": 333,
         "order": 5,
+        "emmaOrder": null,
+        "metagOrder": null,
         "imgPath": "monsters/AVIS/Astrub/Padgref.webp"
     },
     {
@@ -53,6 +65,8 @@
         "zone": "Astrub",
         "categoryId": 333,
         "order": 6,
+        "emmaOrder": null,
+        "metagOrder": null,
         "imgPath": "monsters/AVIS/Astrub/Marzwel.webp"
     },
     {
@@ -61,6 +75,8 @@
         "zone": "Astrub",
         "categoryId": 333,
         "order": 7,
+        "emmaOrder": null,
+        "metagOrder": null,
         "imgPath": "monsters/AVIS/Astrub/Aermyne.webp"
     },
     {
@@ -69,6 +85,8 @@
         "zone": "Astrub",
         "categoryId": 333,
         "order": 8,
+        "emmaOrder": null,
+        "metagOrder": null,
         "imgPath": "monsters/AVIS/Astrub/Musha.webp"
     },
     {
@@ -77,6 +95,8 @@
         "zone": "Astrub",
         "categoryId": 333,
         "order": 9,
+        "emmaOrder": null,
+        "metagOrder": null,
         "imgPath": "monsters/AVIS/Astrub/Rok.webp"
     },
     {
@@ -85,6 +105,8 @@
         "zone": "Astrub",
         "categoryId": 333,
         "order": 10,
+        "emmaOrder": null,
+        "metagOrder": null,
         "imgPath": "monsters/AVIS/Astrub/Zatoishwan.webp"
     },
     {
@@ -93,6 +115,8 @@
         "zone": "Amakna",
         "categoryId": 333,
         "order": 11,
+        "emmaOrder": null,
+        "metagOrder": null,
         "imgPath": "monsters/AVIS/Amakna/Tyranne.webp"
     },
     {
@@ -101,6 +125,8 @@
         "zone": "Amakna",
         "categoryId": 333,
         "order": 12,
+        "emmaOrder": null,
+        "metagOrder": null,
         "imgPath": "monsters/AVIS/Amakna/Naganita.webp"
     },
     {
@@ -109,6 +135,8 @@
         "zone": "Amakna",
         "categoryId": 333,
         "order": 13,
+        "emmaOrder": null,
+        "metagOrder": null,
         "imgPath": "monsters/AVIS/Amakna/Nenufor.webp"
     },
     {
@@ -117,6 +145,8 @@
         "zone": "Amakna",
         "categoryId": 333,
         "order": 14,
+        "emmaOrder": null,
+        "metagOrder": null,
         "imgPath": "monsters/AVIS/Amakna/Fojumo.webp"
     },
     {
@@ -125,7 +155,9 @@
         "zone": "Amakna",
         "categoryId": 333,
         "order": 15,
-        "imgPath": ""
+        "emmaOrder": null,
+        "metagOrder": null,
+        "imgPath": "monsters/AVIS/Amakna/Anatak.webp"
     },
     {
         "id": "A16",
@@ -133,6 +165,8 @@
         "zone": "Amakna",
         "categoryId": 333,
         "order": 16,
+        "emmaOrder": null,
+        "metagOrder": null,
         "imgPath": "monsters/AVIS/Amakna/Anatak.webp"
     },
     {
@@ -141,6 +175,8 @@
         "zone": "Amakna",
         "categoryId": 333,
         "order": 17,
+        "emmaOrder": null,
+        "metagOrder": null,
         "imgPath": "monsters/AVIS/Amakna/Kongoku.webp"
     },
     {
@@ -149,6 +185,8 @@
         "zone": "Amakna",
         "categoryId": 333,
         "order": 18,
+        "emmaOrder": null,
+        "metagOrder": null,
         "imgPath": "monsters/AVIS/Amakna/Trukipik.webp"
     },
     {
@@ -157,6 +195,8 @@
         "zone": "Amakna",
         "categoryId": 333,
         "order": 19,
+        "emmaOrder": null,
+        "metagOrder": null,
         "imgPath": "monsters/AVIS/Amakna/Simbadas.webp"
     },
     {
@@ -173,6 +213,8 @@
         "zone": "Amakna",
         "categoryId": 333,
         "order": 21,
+        "emmaOrder": null,
+        "metagOrder": null,
         "imgPath": "monsters/AVIS/Amakna/Shushu.webp"
     },
     {
@@ -181,6 +223,8 @@
         "zone": "Amakna",
         "categoryId": 333,
         "order": 22,
+        "emmaOrder": null,
+        "metagOrder": null,
         "imgPath": "monsters/AVIS/Amakna/Predagob.webp"
     },
     {
@@ -189,6 +233,8 @@
         "zone": "Justiciers",
         "categoryId": 333,
         "order": 23,
+        "emmaOrder": null,
+        "metagOrder": null,
         "imgPath": "monsters/AVIS/Justiciers/Guman.webp"
     },
     {
@@ -197,6 +243,8 @@
         "zone": "Justiciers",
         "categoryId": 333,
         "order": 24,
+        "emmaOrder": null,
+        "metagOrder": null,
         "imgPath": "monsters/AVIS/Justiciers/Ali.webp"
     },
     {
@@ -205,6 +253,8 @@
         "zone": "Justiciers",
         "categoryId": 333,
         "order": 25,
+        "emmaOrder": null,
+        "metagOrder": null,
         "imgPath": "monsters/AVIS/Justiciers/Gadoo.webp"
     },
     {
@@ -213,6 +263,8 @@
         "zone": "Justiciers",
         "categoryId": 333,
         "order": 26,
+        "emmaOrder": null,
+        "metagOrder": null,
         "imgPath": "monsters/AVIS/Justiciers/Amy.webp"
     },
     {
@@ -221,6 +273,8 @@
         "zone": "Justiciers",
         "categoryId": 333,
         "order": 27,
+        "emmaOrder": null,
+        "metagOrder": null,
         "imgPath": "monsters/AVIS/Justiciers/Hyperscampe.webp"
     },
     {
@@ -229,6 +283,8 @@
         "zone": "Sufokia",
         "categoryId": 333,
         "order": 28,
+        "emmaOrder": null,
+        "metagOrder": null,
         "imgPath": "monsters/AVIS/Sufokia/Medali.webp"
     },
     {
@@ -237,6 +293,8 @@
         "zone": "Sufokia",
         "categoryId": 333,
         "order": 29,
+        "emmaOrder": null,
+        "metagOrder": null,
         "imgPath": "monsters/AVIS/Sufokia/Buldalazred.webp"
     },
     {
@@ -245,6 +303,8 @@
         "zone": "Sufokia",
         "categoryId": 333,
         "order": 30,
+        "emmaOrder": null,
+        "metagOrder": null,
         "imgPath": "monsters/AVIS/Sufokia/Takomako.webp"
     },
     {
@@ -253,6 +313,8 @@
         "zone": "Saharach",
         "categoryId": 333,
         "order": 31,
+        "emmaOrder": null,
+        "metagOrder": null,
         "imgPath": "monsters/AVIS/Saharach/Tournade.webp"
     },
     {
@@ -261,6 +323,8 @@
         "zone": "Saharach",
         "categoryId": 333,
         "order": 32,
+        "emmaOrder": null,
+        "metagOrder": null,
         "imgPath": "monsters/AVIS/Saharach/Camole.webp"
     },
     {
@@ -269,6 +333,8 @@
         "zone": "Saharach",
         "categoryId": 333,
         "order": 33,
+        "emmaOrder": null,
+        "metagOrder": null,
         "imgPath": "monsters/AVIS/Saharach/Ka.webp"
     },
     {
@@ -277,6 +343,8 @@
         "zone": "Saharach",
         "categoryId": 333,
         "order": 34,
+        "emmaOrder": null,
+        "metagOrder": null,
         "imgPath": "monsters/AVIS/Saharach/Khepricorne.webp"
     },
     {
@@ -285,6 +353,8 @@
         "zone": "Bourgade",
         "categoryId": 333,
         "order": 35,
+        "emmaOrder": null,
+        "metagOrder": null,
         "imgPath": "monsters/AVIS/Frigost/Bouflouth.webp"
     },
     {
@@ -293,6 +363,8 @@
         "zone": "Bourgade",
         "categoryId": 333,
         "order": 36,
+        "emmaOrder": null,
+        "metagOrder": null,
         "imgPath": "monsters/AVIS/Frigost/Pingouin.webp"
     },
     {
@@ -301,6 +373,8 @@
         "zone": "Bourgade",
         "categoryId": 333,
         "order": 37,
+        "emmaOrder": null,
+        "metagOrder": null,
         "imgPath": "monsters/AVIS/Frigost/Katigrou.webp"
     },
     {
@@ -309,6 +383,8 @@
         "zone": "Bourgade",
         "categoryId": 333,
         "order": 38,
+        "emmaOrder": null,
+        "metagOrder": null,
         "imgPath": "monsters/AVIS/Frigost/Fantomayte.webp"
     },
     {
@@ -317,6 +393,8 @@
         "zone": "Bourgade",
         "categoryId": 333,
         "order": 39,
+        "emmaOrder": null,
+        "metagOrder": null,
         "imgPath": "monsters/AVIS/Frigost/Vengeuse.webp"
     },
     {
@@ -325,6 +403,8 @@
         "zone": "Bourgade",
         "categoryId": 333,
         "order": 40,
+        "emmaOrder": null,
+        "metagOrder": null,
         "imgPath": "monsters/AVIS/Frigost/Yech.webp"
     },
     {
@@ -333,6 +413,8 @@
         "zone": "Bourgade",
         "categoryId": 333,
         "order": 41,
+        "emmaOrder": null,
+        "metagOrder": null,
         "imgPath": "monsters/AVIS/Frigost/Eggob.webp"
     },
     {
@@ -341,6 +423,8 @@
         "zone": "Village Enseveli",
         "categoryId": 333,
         "order": 42,
+        "emmaOrder": null,
+        "metagOrder": null,
         "imgPath": "monsters/AVIS/Frigost/Fuji.webp"
     },
     {
@@ -349,6 +433,8 @@
         "zone": "Village Enseveli",
         "categoryId": 333,
         "order": 43,
+        "emmaOrder": null,
+        "metagOrder": null,
         "imgPath": "monsters/AVIS/Frigost/Dremoan.webp"
     },
     {
@@ -357,6 +443,8 @@
         "zone": "Village Enseveli",
         "categoryId": 333,
         "order": 44,
+        "emmaOrder": null,
+        "metagOrder": null,
         "imgPath": "monsters/AVIS/Frigost/Flasho.webp"
     },
     {
@@ -365,6 +453,8 @@
         "zone": "Village Enseveli",
         "categoryId": 333,
         "order": 45,
+        "emmaOrder": null,
+        "metagOrder": null,
         "imgPath": "monsters/AVIS/Frigost/Viti.webp"
     },
     {
@@ -373,6 +463,8 @@
         "zone": "Chateau du Comte Harebourg",
         "categoryId": 333,
         "order": 46,
+        "emmaOrder": null,
+        "metagOrder": null,
         "imgPath": "monsters/AVIS/Frigost/Glourdorak.webp"
     },
     {
@@ -381,6 +473,8 @@
         "zone": "Chateau du Comte Harebourg",
         "categoryId": 333,
         "order": 47,
+        "emmaOrder": null,
+        "metagOrder": null,
         "imgPath": "monsters/AVIS/Frigost/Mekamouth.webp"
     },
     {
@@ -389,6 +483,8 @@
         "zone": "Chateau du Comte Harebourg",
         "categoryId": 333,
         "order": 48,
+        "emmaOrder": null,
+        "metagOrder": null,
         "imgPath": "monsters/AVIS/Frigost/Psikopompe.webp"
     },
     {
@@ -397,6 +493,8 @@
         "zone": "Chateau du Comte Harebourg",
         "categoryId": 333,
         "order": 49,
+        "emmaOrder": null,
+        "metagOrder": null,
         "imgPath": "monsters/AVIS/Frigost/Chevalier.webp"
     },
     
@@ -406,6 +504,8 @@
         "zone": "Chateau du Comte Harebourg",
         "categoryId": 333,
         "order": 50,
+        "emmaOrder": null,
+        "metagOrder": null,
         "imgPath": "monsters/AVIS/Frigost/Culbutoeuf.webp"
     },
     {
@@ -414,6 +514,8 @@
         "zone": "Chateau du Comte Harebourg",
         "categoryId": 333,
         "order": 51,
+        "emmaOrder": null,
+        "metagOrder": null,
         "imgPath": "monsters/AVIS/Frigost/Harebourg.webp"
     },
     {
@@ -422,6 +524,8 @@
         "zone": "Dimensions",
         "categoryId": 333,
         "order": 52,
+        "emmaOrder": null,
+        "metagOrder": null,
         "imgPath": "monsters/AVIS/Dimensions/Malle.webp"
     },
     {
@@ -430,6 +534,8 @@
         "zone": "Dimensions",
         "categoryId": 333,
         "order": 53,
+        "emmaOrder": null,
+        "metagOrder": null,
         "imgPath": "monsters/AVIS/Dimensions/Aigripoil.webp"
     },
     {
@@ -438,6 +544,8 @@
         "zone": "Dimensions",
         "categoryId": 333,
         "order": 54,
+        "emmaOrder": null,
+        "metagOrder": null,
         "imgPath": "monsters/AVIS/Dimensions/Voldelor.webp"
     },
     {
@@ -446,6 +554,8 @@
         "zone": "Dimensions",
         "categoryId": 333,
         "order": 57,
+        "emmaOrder": null,
+        "metagOrder": null,
         "imgPath": "monsters/AVIS/Dimensions/Gein.webp"
     },
     {
@@ -454,6 +564,8 @@
         "zone": "Dimensions",
         "categoryId": 333,
         "order": 56,
+        "emmaOrder": null,
+        "metagOrder": null,
         "imgPath": "monsters/AVIS/Dimensions/Mouchame.webp"
     },
     {
@@ -462,6 +574,8 @@
         "zone": "Dimensions",
         "categoryId": 333,
         "order": 55,
+        "emmaOrder": null,
+        "metagOrder": null,
         "imgPath": "monsters/AVIS/Dimensions/Panteroz.webp"
     },
     {
@@ -470,6 +584,8 @@
         "zone": "Dimensions",
         "categoryId": 333,
         "order": 58,
+        "emmaOrder": null,
+        "metagOrder": null,
         "imgPath": "monsters/AVIS/Dimensions/Morblok.webp"
     },
     {
@@ -478,6 +594,8 @@
         "zone": "Dimensions",
         "categoryId": 333,
         "order": 59,
+        "emmaOrder": null,
+        "metagOrder": null,
         "imgPath": "monsters/AVIS/Dimensions/Hin.webp"
     },
     {
@@ -486,6 +604,8 @@
         "zone": "Dimensions",
         "categoryId": 333,
         "order": 60,
+        "emmaOrder": null,
+        "metagOrder": null,
         "imgPath": "monsters/AVIS/Dimensions/Sicogne.webp"
     },
     {
@@ -494,6 +614,8 @@
         "zone": "Dimensions",
         "categoryId": 333,
         "order": 61,
+        "emmaOrder": null,
+        "metagOrder": null,
         "imgPath": "monsters/AVIS/Dimensions/Atcham.webp"
     }
     
