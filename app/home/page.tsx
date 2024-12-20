@@ -23,6 +23,9 @@ export default function Home() {
     const [avisData, setAvisData] = useState<any>([]);
 
 
+    // Fetch toute la Data Statique et la range dans 4 variables différentes déjà filtrées
+
+
     const fetchStaticData = async () => {
         const staticDataFiles = [
             "staticJSON/AVIS.json",
@@ -33,30 +36,41 @@ export default function Home() {
             "staticJSON/D191A200.json",
             "staticJSON/DE.json"
         ];
-
+    
         try {
             const responses = await Promise.all(
                 staticDataFiles.map(file => fetch(file))
             );
-
+    
             const jsonData = await Promise.all(
                 responses.map(response => {
                     if (!response.ok) {
                         throw new Error(`Erreur: ${response.status}`);
                     }
                     return response.json();
-                    
                 })
             );
-
-            setStaticData(jsonData); 
-
+    
+            const allData = jsonData.flat();
+    
+            // Filter les datas à la source
+            const filteredEmmaData = allData.filter((item: any) => item.emmaOrder !== null);
+            const filteredMetagData = allData.filter((item: any) => item.metagOrder !== null);
+            const filteredAvisData = allData.filter((item: any) => item.categoryId === 333);
+    
+            setStaticData(allData);
+            setEmmaData(filteredEmmaData);
+            setMetagData(filteredMetagData);
+            setAvisData(filteredAvisData);
+    
         } catch (err: any) {
             setError(err.message);
         } finally {
             setLoading(false);
         }
     };
+
+    // Fetch Data Utilisateur Momentanée pour Test Frontend
 
     const fetchFrontData = async () => {
         try {
@@ -72,6 +86,8 @@ export default function Home() {
         }
     };
 
+
+
     useEffect(() => {
         fetchStaticData();
     }, []); 
@@ -82,25 +98,6 @@ export default function Home() {
             fetchFrontData();
         }
     }, [frontData]);
-
-    useEffect(() => {
-        if (staticData) {
-            const filteredEmmaData = staticData.flat().filter((item: any) => 
-                item.emmaOrder !== null
-            );
-            setEmmaData(filteredEmmaData);
-
-            const filteredMetagData = staticData.flat().filter((item: any) => 
-                item.metagOrder !== null
-            );
-            setMetagData(filteredMetagData);
-
-            const filteredAvisData = staticData.flat().filter((item: any) => 
-                item.categoryId === 333
-            );
-            setAvisData(filteredAvisData);
-        }
-    }, [staticData]);
 
     if (loading) return <p>Chargement...</p>;
     if (error) return <p>Erreur: {error}</p>;
