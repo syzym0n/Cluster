@@ -86,12 +86,12 @@ export default function Home() {
     useEffect(() => {
         if (staticData) {
             const filteredEmmaData = staticData.flat().filter((item: any) => 
-                item.emmaOrder !== null && item.categoryId !== 333
+                item.emmaOrder !== null
             );
             setEmmaData(filteredEmmaData);
 
             const filteredMetagData = staticData.flat().filter((item: any) => 
-                item.metagOrder !== null && item.categoryId !== 333
+                item.metagOrder !== null
             );
             setMetagData(filteredMetagData);
 

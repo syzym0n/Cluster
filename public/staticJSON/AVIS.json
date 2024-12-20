@@ -205,6 +205,8 @@
         "zone": "Amakna",
         "categoryId": 333,
         "order": 20,
+        "emmaOrder": null,
+        "metagOrder": null,
         "imgPath": "monsters/AVIS/Amakna/Carlita.webp"
     },
     {
