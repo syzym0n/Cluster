@@ -5,7 +5,9 @@ import { useEffect, useState } from "react";
 import HomeHeader from "@/components/homePage/header/homeHeader/homeHeader";
 import HomeClassFilter from "@/components/homePage/centralFilter/homeClassFilter/homeClassFilter";
 import HomeTypeFilter from "@/components/homePage/centralFilter/homeTypeFilter/homeTypeFilter";
-import HomeDisplayMonsters from "@/components/homePage/displayMonsters/globalDisplayMonsters/globalDisplayMonsters";
+import GlobalDisplayMonsters from "@/components/homePage/displayMonsters/globalDisplayMonsters/globalDisplayMonsters";
+
+import { Monster, AvisMonster } from "@/types/types";
 
 export default function Home() {
 
@@ -19,9 +21,10 @@ export default function Home() {
     const [filteredType, setFilteredType] = useState<string>("emma");
     const [filteredTypePlus, setFilteredTypePlus] = useState<number>(0);
 
-    const [emmaData, setEmmaData] = useState<any>([]);
-    const [metagData, setMetagData] = useState<any>([]);
-    const [avisData, setAvisData] = useState<any>([]);
+    const [emmaData, setEmmaData] = useState<Monster[]>([]);
+    const [metagData, setMetagData] = useState<Monster[]>([]);
+    const [avisData, setAvisData] = useState<AvisMonster[]>([]);
+
 
 
     // Fetch toute la Data Statique et la range dans 4 variables différentes déjà filtrées
@@ -126,7 +129,12 @@ export default function Home() {
                 filteredTypePlus={filteredTypePlus} 
                 setFilteredTypePlus={setFilteredTypePlus}  
             />
-            <HomeDisplayMonsters
+            <GlobalDisplayMonsters
+                emmaData={emmaData}
+                metagData={metagData}
+                avisData={avisData}
+                filteredType={filteredType}
+                filteredTypePlus={filteredTypePlus}
             />
         </div>
     );
