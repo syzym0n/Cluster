@@ -115,6 +115,7 @@ export default function Home() {
                 staticData={staticData}
                 filteredType={filteredType}
                 filteredTypePlus={filteredTypePlus}
+                classOrder={frontData[0]?.classOrder || []}
             />
         </div>
     );

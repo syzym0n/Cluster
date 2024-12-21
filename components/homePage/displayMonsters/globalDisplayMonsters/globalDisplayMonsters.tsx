@@ -8,10 +8,11 @@ interface GlobalDisplayMonstersProps {
     staticData: (Monster | AvisMonster)[];
     filteredType: string;
     filteredTypePlus: number;
+    classOrder: string[]; 
 }
 
 
-export default function HomeDisplayMonsters({staticData,filteredType,filteredTypePlus}:GlobalDisplayMonstersProps) {
+export default function HomeDisplayMonsters({staticData,filteredType,filteredTypePlus, classOrder}:GlobalDisplayMonstersProps) {
     const stepEmma = [1, 7, 13, 18, 24, 30];
         const stepMetag = [1, 5, 11, 17, 22, 28];
         const stepAvis = [0, 11, 23, 28, 31, 35, 42, 46, 52, 62];
@@ -53,6 +54,7 @@ export default function HomeDisplayMonsters({staticData,filteredType,filteredTyp
                             key={monster.id} 
                             name={monster.boss}
                             imgPath = {monster.imgPath}
+                            classOrder={classOrder}
                             />
                     ))
                 ) : (
