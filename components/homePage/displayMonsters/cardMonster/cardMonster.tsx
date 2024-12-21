@@ -1,9 +1,15 @@
 import ClassCardMonster from "../classCardMonster/classCardMonster";
 
-export default function CardMonster() {
+interface CardMonsterProps {
+    name: string | undefined;
+    imgPath: string | undefined;
+}
+
+export default function CardMonster({name, imgPath}: CardMonsterProps) {
     return (
         <div>
-            <h1>Card Monster</h1>
+            <p>{name}</p>
+            <img src={imgPath} alt={`Illustration du Monstre ${name}`}></img>
             <ClassCardMonster />
         </div>
     );

@@ -74,7 +74,7 @@
     "challenge": ["Classique", "Prudent", "Premier", "Duo", "Spécial"],
     "emmaOrder": null,
     "metagOrder": 10,
-    "imgPath": ""
+    "imgPath": "monsters/D51A100/Craqueleur.webp"
   },
   {
     "id": "D50A1007",
@@ -107,7 +107,7 @@
     "challenge": ["Classique", "Mains Propres", "Zombie", "Duo", "Spécial"],
     "emmaOrder": 14,
     "metagOrder": null,
-    "imgPath": ""
+    "imgPath": "monsters/D51A100/Mantiscore.webp"
   },
   {
     "id": "D50A10010",

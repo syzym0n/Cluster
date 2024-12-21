@@ -1,6 +1,6 @@
-import AvisDisplayMonsters from "../avisDisplayMonsters/avisDisplayMonsters";
-import EmmaDisplayMonsters from "../emmaDisplayMonsters/emmaDisplayMonsters"
-import MetagDisplayMonsters from "../metagDisplayMonsters/metagDisplayMonsters";
+import { useState, useEffect } from "react";
+
+import CardMonster from "../cardMonster/cardMonster";
 
 import { Monster, AvisMonster } from "@/types/types";
 
@@ -14,19 +14,69 @@ interface GlobalDisplayMonstersProps {
 
 
 export default function HomeDisplayMonsters({emmaData,metagData,avisData,filteredType,filteredTypePlus}:GlobalDisplayMonstersProps) {
-    return (
+    const stepEmma = [1, 7, 13, 18, 24, 30];
+        const stepMetag = [1, 5, 11, 17, 22, 28];
+        const stepAvis = [0, 11, 23, 28, 31, 35, 42, 46, 52, 62];
+    
+        const [indexMin, setIndexMin] = useState<number>(0);
+        const [indexMax, setIndexMax] = useState<number>(0);
+    
+        useEffect(() => {
+    
+            if (filteredType === "emma"){
+                setIndexMin(stepEmma[filteredTypePlus])
+                setIndexMax(stepEmma[filteredTypePlus+1]-1)
+            } else if (filteredType === "metag"){
+                setIndexMin(stepMetag[filteredTypePlus])
+                setIndexMax(stepMetag[filteredTypePlus+1]-1)
+            } else if (filteredType === "avis"){
+                setIndexMin(stepAvis[filteredTypePlus])
+                setIndexMax(stepAvis[filteredTypePlus+1]-1)
+            }
+    
+    
+        }, [filteredType, filteredTypePlus]);
+    
+        const filteredMonsters = (() => {
+            if (filteredType === "emma") {
+                return emmaData.filter(
+                    (monster) =>
+                        monster.emmaOrder !== null &&
+                        monster.emmaOrder >= indexMin &&
+                        monster.emmaOrder <= indexMax
+                );
+            } else if (filteredType === "metag") {
+                return metagData.filter(
+                    (monster) =>
+                        monster.metagOrder !== null &&
+                        monster.metagOrder >= indexMin &&
+                        monster.metagOrder <= indexMax
+                );
+            } else if (filteredType === "avis") {
+                return avisData.filter(
+                    (monster) =>
+                        monster.categoryId === 333 &&
+                        monster.order >= indexMin &&
+                        monster.order <= indexMax
+                );
+            }
+            return [];
+        })();
+    
+    
+        return(
         <div>
-            <section className={filteredType === "emma" ? "block" : "hidden"}>
-            <EmmaDisplayMonsters />
-            </section>
-
-            <section className={filteredType === "metag" ? "block" : "hidden"}>
-            <MetagDisplayMonsters />
-            </section>
-
-            <section className={filteredType === "avis" ? "block" : "hidden"}>
-            <AvisDisplayMonsters />
-            </section>
-        </div>
-    );
-}
+                {filteredMonsters.length > 0 ? (
+                    filteredMonsters.map((monster) => (
+                        <CardMonster 
+                            key={monster.id} 
+                            name={monster.boss}
+                            imgPath = {monster.imgPath}
+                            />
+                    ))
+                ) : (
+                    <p>Aucun monstre à afficher.</p>
+                )}
+            </div>
+        );
+    }

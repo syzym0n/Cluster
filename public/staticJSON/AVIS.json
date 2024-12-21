@@ -1,7 +1,7 @@
 [
     {
         "id": "A0",
-        "name": "Fouduglen L'Écureuil",
+        "boss": "Fouduglen L'Écureuil",
         "zone": "Astrub",
         "categoryId": 333,
         "order": 0,
@@ -11,7 +11,7 @@
     },
     {
         "id": "A1",
-        "name": "Frakacia Leukocytine",
+        "boss": "Frakacia Leukocytine",
         "zone": "Astrub",
         "categoryId": 333,
         "order": 1,
@@ -21,7 +21,7 @@
     },
     {
         "id": "A2",
-        "name": "Ogivol Scalarcin",
+        "boss": "Ogivol Scalarcin",
         "zone": "Astrub",
         "categoryId": 333,
         "order": 2,
@@ -31,7 +31,7 @@
     },
     {
         "id": "A3",
-        "name": "Brumen Tinctorias",
+        "boss": "Brumen Tinctorias",
         "zone": "Astrub",
         "categoryId": 333,
         "order": 3,
@@ -41,7 +41,7 @@
     },
     {
         "id": "A4",
-        "name": "Qil Bil",
+        "boss": "Qil Bil",
         "zone": "Astrub",
         "categoryId": 333,
         "order": 4,
@@ -51,7 +51,7 @@
     },
     {
         "id": "A5",
-        "name": "Padgref Demoël",
+        "boss": "Padgref Demoël",
         "zone": "Astrub",
         "categoryId": 333,
         "order": 5,
@@ -61,7 +61,7 @@
     },
     {
         "id": "A6",
-        "name": "Marzwel le Gobelin",
+        "boss": "Marzwel le Gobelin",
         "zone": "Astrub",
         "categoryId": 333,
         "order": 6,
@@ -71,7 +71,7 @@
     },
     {
         "id": "A7",
-        "name": "Aermyne 'Braco' Scalptaras",
+        "boss": "Aermyne 'Braco' Scalptaras",
         "zone": "Astrub",
         "categoryId": 333,
         "order": 7,
@@ -81,7 +81,7 @@
     },
     {
         "id": "A8",
-        "name": "Musha l'Oni",
+        "boss": "Musha l'Oni",
         "zone": "Astrub",
         "categoryId": 333,
         "order": 8,
@@ -91,7 +91,7 @@
     },
     {
         "id": "A9",
-        "name": "Rok Gnorok",
+        "boss": "Rok Gnorok",
         "zone": "Astrub",
         "categoryId": 333,
         "order": 9,
@@ -101,7 +101,7 @@
     },
     {
         "id": "A10",
-        "name": "Zatoïshwan",
+        "boss": "Zatoïshwan",
         "zone": "Astrub",
         "categoryId": 333,
         "order": 10,
@@ -111,7 +111,7 @@
     },
     {
         "id": "A11",
-        "name": "Tyranne la Terrible",
+        "boss": "Tyranne la Terrible",
         "zone": "Amakna",
         "categoryId": 333,
         "order": 11,
@@ -121,7 +121,7 @@
     },
     {
         "id": "A12",
-        "name": "Naganita",
+        "boss": "Naganita",
         "zone": "Amakna",
         "categoryId": 333,
         "order": 12,
@@ -131,7 +131,7 @@
     },
     {
         "id": "A13",
-        "name": "Nenufor Tilotus",
+        "boss": "Nenufor Tilotus",
         "zone": "Amakna",
         "categoryId": 333,
         "order": 13,
@@ -141,7 +141,7 @@
     },
     {
         "id": "A14",
-        "name": "Fojumo",
+        "boss": "Fojumo",
         "zone": "Amakna",
         "categoryId": 333,
         "order": 14,
@@ -151,7 +151,7 @@
     },
     {
         "id": "A15",
-        "name": "Anatak Diskedor",
+        "boss": "Anatak Diskedor",
         "zone": "Amakna",
         "categoryId": 333,
         "order": 15,
@@ -161,7 +161,7 @@
     },
     {
         "id": "A16",
-        "name": "Guerrier du K.O",
+        "boss": "Guerrier du K.O",
         "zone": "Amakna",
         "categoryId": 333,
         "order": 16,
@@ -171,7 +171,7 @@
     },
     {
         "id": "A17",
-        "name": "Grand Kongoku",
+        "boss": "Grand Kongoku",
         "zone": "Amakna",
         "categoryId": 333,
         "order": 17,
@@ -181,7 +181,7 @@
     },
     {
         "id": "A18",
-        "name": "Trukipik",
+        "boss": "Trukipik",
         "zone": "Amakna",
         "categoryId": 333,
         "order": 18,
@@ -191,7 +191,7 @@
     },
     {
         "id": "A19",
-        "name": "Simbadas",
+        "boss": "Simbadas",
         "zone": "Amakna",
         "categoryId": 333,
         "order": 19,
@@ -201,7 +201,7 @@
     },
     {
         "id": "A20",
-        "name": "Carlita de l'Aguerfelde",
+        "boss": "Carlita de l'Aguerfelde",
         "zone": "Amakna",
         "categoryId": 333,
         "order": 20,
@@ -211,7 +211,7 @@
     },
     {
         "id": "A21",
-        "name": "Shushu Debruk'Sayl",
+        "boss": "Shushu Debruk'Sayl",
         "zone": "Amakna",
         "categoryId": 333,
         "order": 21,
@@ -221,7 +221,7 @@
     },
     {
         "id": "A22",
-        "name": "Predagob",
+        "boss": "Predagob",
         "zone": "Amakna",
         "categoryId": 333,
         "order": 22,
@@ -231,7 +231,7 @@
     },
     {
         "id": "A23",
-        "name": "Les Guman",
+        "boss": "Les Guman",
         "zone": "Justiciers",
         "categoryId": 333,
         "order": 23,
@@ -241,7 +241,7 @@
     },
     {
         "id": "A24",
-        "name": "Ali Grothor",
+        "boss": "Ali Grothor",
         "zone": "Justiciers",
         "categoryId": 333,
         "order": 24,
@@ -251,7 +251,7 @@
     },
     {
         "id": "A25",
-        "name": "Gadoo",
+        "boss": "Gadoo",
         "zone": "Justiciers",
         "categoryId": 333,
         "order": 25,
@@ -261,7 +261,7 @@
     },
     {
         "id": "A26",
-        "name": "Amy L'Empoisonneuse",
+        "boss": "Amy L'Empoisonneuse",
         "zone": "Justiciers",
         "categoryId": 333,
         "order": 26,
@@ -271,7 +271,7 @@
     },
     {
         "id": "A27",
-        "name": "Hyperscampe",
+        "boss": "Hyperscampe",
         "zone": "Justiciers",
         "categoryId": 333,
         "order": 27,
@@ -281,7 +281,7 @@
     },
     {
         "id": "A28",
-        "name": "Homard Medali",
+        "boss": "Homard Medali",
         "zone": "Sufokia",
         "categoryId": 333,
         "order": 28,
@@ -291,7 +291,7 @@
     },
     {
         "id": "A29",
-        "name": "Buldalazred",
+        "boss": "Buldalazred",
         "zone": "Sufokia",
         "categoryId": 333,
         "order": 29,
@@ -301,7 +301,7 @@
     },
     {
         "id": "A30",
-        "name": "Takomako",
+        "boss": "Takomako",
         "zone": "Sufokia",
         "categoryId": 333,
         "order": 30,
@@ -311,7 +311,7 @@
     },
     {
         "id": "A31",
-        "name": "Tournade",
+        "boss": "Tournade",
         "zone": "Saharach",
         "categoryId": 333,
         "order": 31,
@@ -321,7 +321,7 @@
     },
     {
         "id": "A32",
-        "name": "Roi Camole",
+        "boss": "Roi Camole",
         "zone": "Saharach",
         "categoryId": 333,
         "order": 32,
@@ -331,7 +331,7 @@
     },
     {
         "id": "A33",
-        "name": "Ka'Youloud",
+        "boss": "Ka'Youloud",
         "zone": "Saharach",
         "categoryId": 333,
         "order": 33,
@@ -341,7 +341,7 @@
     },
     {
         "id": "A34",
-        "name": "Kheprikorne",
+        "boss": "Kheprikorne",
         "zone": "Saharach",
         "categoryId": 333,
         "order": 34,
@@ -351,7 +351,7 @@
     },
     {
         "id": "A35",
-        "name": "Bouflouth",
+        "boss": "Bouflouth",
         "zone": "Bourgade",
         "categoryId": 333,
         "order": 35,
@@ -361,7 +361,7 @@
     },
     {
         "id": "A36",
-        "name": "Monsieur Pingouin",
+        "boss": "Monsieur Pingouin",
         "zone": "Bourgade",
         "categoryId": 333,
         "order": 36,
@@ -371,7 +371,7 @@
     },
     {
         "id": "A37",
-        "name": "Katigrou",
+        "boss": "Katigrou",
         "zone": "Bourgade",
         "categoryId": 333,
         "order": 37,
@@ -381,7 +381,7 @@
     },
     {
         "id": "A38",
-        "name": "Fantomayte",
+        "boss": "Fantomayte",
         "zone": "Bourgade",
         "categoryId": 333,
         "order": 38,
@@ -391,7 +391,7 @@
     },
     {
         "id": "A39",
-        "name": "Vengeuse Masquée",
+        "boss": "Vengeuse Masquée",
         "zone": "Bourgade",
         "categoryId": 333,
         "order": 39,
@@ -401,7 +401,7 @@
     },
     {
         "id": "A40",
-        "name": "YeCh'Ti",
+        "boss": "YeCh'Ti",
         "zone": "Bourgade",
         "categoryId": 333,
         "order": 40,
@@ -411,7 +411,7 @@
     },
     {
         "id": "A41",
-        "name": "Docteur Eggob",
+        "boss": "Docteur Eggob",
         "zone": "Bourgade",
         "categoryId": 333,
         "order": 41,
@@ -421,7 +421,7 @@
     },
     {
         "id": "A42",
-        "name": "Fuji Givrefoux",
+        "boss": "Fuji Givrefoux",
         "zone": "Village Enseveli",
         "categoryId": 333,
         "order": 42,
@@ -431,7 +431,7 @@
     },
     {
         "id": "A43",
-        "name": "Dremoan",
+        "boss": "Dremoan",
         "zone": "Village Enseveli",
         "categoryId": 333,
         "order": 43,
@@ -441,7 +441,7 @@
     },
     {
         "id": "A44",
-        "name": "Flasho",
+        "boss": "Flasho",
         "zone": "Village Enseveli",
         "categoryId": 333,
         "order": 44,
@@ -451,7 +451,7 @@
     },
     {
         "id": "A45",
-        "name": "Viti Glourson",
+        "boss": "Viti Glourson",
         "zone": "Village Enseveli",
         "categoryId": 333,
         "order": 45,
@@ -461,7 +461,7 @@
     },
     {
         "id": "A46",
-        "name": "Glourdorak",
+        "boss": "Glourdorak",
         "zone": "Chateau du Comte Harebourg",
         "categoryId": 333,
         "order": 46,
@@ -471,7 +471,7 @@
     },
     {
         "id": "A47",
-        "name": "Mekamouth",
+        "boss": "Mekamouth",
         "zone": "Chateau du Comte Harebourg",
         "categoryId": 333,
         "order": 47,
@@ -481,7 +481,7 @@
     },
     {
         "id": "A48",
-        "name": "Psikopompe",
+        "boss": "Psikopompe",
         "zone": "Chateau du Comte Harebourg",
         "categoryId": 333,
         "order": 48,
@@ -491,7 +491,7 @@
     },
     {
         "id": "A49",
-        "name": "Chevalier de Glace",
+        "boss": "Chevalier de Glace",
         "zone": "Chateau du Comte Harebourg",
         "categoryId": 333,
         "order": 49,
@@ -502,7 +502,7 @@
     
     {
         "id": "A50",
-        "name": "Culbutoeuf",
+        "boss": "Culbutoeuf",
         "zone": "Chateau du Comte Harebourg",
         "categoryId": 333,
         "order": 50,
@@ -512,7 +512,7 @@
     },
     {
         "id": "A51",
-        "name": "Comte Harebourg",
+        "boss": "Comte Harebourg",
         "zone": "Chateau du Comte Harebourg",
         "categoryId": 333,
         "order": 51,
@@ -522,7 +522,7 @@
     },
     {
         "id": "A52",
-        "name": "Maxi malle",
+        "boss": "Maxi malle",
         "zone": "Dimensions",
         "categoryId": 333,
         "order": 52,
@@ -532,7 +532,7 @@
     },
     {
         "id": "A53",
-        "name": "Aigripoil",
+        "boss": "Aigripoil",
         "zone": "Dimensions",
         "categoryId": 333,
         "order": 53,
@@ -542,7 +542,7 @@
     },
     {
         "id": "A54",
-        "name": "Voldelor",
+        "boss": "Voldelor",
         "zone": "Dimensions",
         "categoryId": 333,
         "order": 54,
@@ -552,7 +552,7 @@
     },
     {
         "id": "A55",
-        "name": "Gein",
+        "boss": "Gein",
         "zone": "Dimensions",
         "categoryId": 333,
         "order": 57,
@@ -562,7 +562,7 @@
     },
     {
         "id": "A56",
-        "name": "Mouchâme",
+        "boss": "Mouchâme",
         "zone": "Dimensions",
         "categoryId": 333,
         "order": 56,
@@ -572,7 +572,7 @@
     },
     {
         "id": "A57",
-        "name": "Pantèroz",
+        "boss": "Pantèroz",
         "zone": "Dimensions",
         "categoryId": 333,
         "order": 55,
@@ -582,7 +582,7 @@
     },
     {
         "id": "A58",
-        "name": "Morblok",
+        "boss": "Morblok",
         "zone": "Dimensions",
         "categoryId": 333,
         "order": 58,
@@ -592,7 +592,7 @@
     },
     {
         "id": "A59",
-        "name": "Hin",
+        "boss": "Hin",
         "zone": "Dimensions",
         "categoryId": 333,
         "order": 59,
@@ -602,7 +602,7 @@
     },
     {
         "id": "A60",
-        "name": "Sicogne",
+        "boss": "Sicogne",
         "zone": "Dimensions",
         "categoryId": 333,
         "order": 60,
@@ -612,7 +612,7 @@
     },
     {
         "id": "A61",
-        "name": "Atcham",
+        "boss": "Atcham",
         "zone": "Dimensions",
         "categoryId": 333,
         "order": 61,

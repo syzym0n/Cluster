@@ -12,7 +12,7 @@ export interface Monster {
 
 export interface AvisMonster {
     id: string;
-    name: string;
+    boss: string;
     zone: string;
     categoryId: number;
     order: number;
