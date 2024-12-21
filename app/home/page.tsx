@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import HomeHeader from "@/components/homePage/header/homeHeader/homeHeader";
 import HomeClassFilter from "@/components/homePage/centralFilter/homeClassFilter/homeClassFilter";
 import HomeTypeFilter from "@/components/homePage/centralFilter/homeTypeFilter/homeTypeFilter";
+import HomeDisplayMonsters from "@/components/homePage/displayMonsters/globalDisplayMonsters/globalDisplayMonsters";
 
 export default function Home() {
 
@@ -124,6 +125,8 @@ export default function Home() {
                 setFilteredType={setFilteredType}
                 filteredTypePlus={filteredTypePlus} 
                 setFilteredTypePlus={setFilteredTypePlus}  
+            />
+            <HomeDisplayMonsters
             />
         </div>
     );
