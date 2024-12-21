@@ -5,15 +5,13 @@ import CardMonster from "../cardMonster/cardMonster";
 import { Monster, AvisMonster } from "@/types/types";
 
 interface GlobalDisplayMonstersProps {
-    emmaData: Monster[];
-    metagData: Monster[];
-    avisData: AvisMonster[];
+    staticData: (Monster | AvisMonster)[];
     filteredType: string;
     filteredTypePlus: number;
 }
 
 
-export default function HomeDisplayMonsters({emmaData,metagData,avisData,filteredType,filteredTypePlus}:GlobalDisplayMonstersProps) {
+export default function HomeDisplayMonsters({staticData,filteredType,filteredTypePlus}:GlobalDisplayMonstersProps) {
     const stepEmma = [1, 7, 13, 18, 24, 30];
         const stepMetag = [1, 5, 11, 17, 22, 28];
         const stepAvis = [0, 11, 23, 28, 31, 35, 42, 46, 52, 62];
@@ -33,35 +31,18 @@ export default function HomeDisplayMonsters({emmaData,metagData,avisData,filtere
                 setIndexMin(stepAvis[filteredTypePlus])
                 setIndexMax(stepAvis[filteredTypePlus+1]-1)
             }
-    
-    
         }, [filteredType, filteredTypePlus]);
     
-        const filteredMonsters = (() => {
-            if (filteredType === "emma") {
-                return emmaData.filter(
-                    (monster) =>
-                        monster.emmaOrder !== null &&
-                        monster.emmaOrder >= indexMin &&
-                        monster.emmaOrder <= indexMax
-                );
-            } else if (filteredType === "metag") {
-                return metagData.filter(
-                    (monster) =>
-                        monster.metagOrder !== null &&
-                        monster.metagOrder >= indexMin &&
-                        monster.metagOrder <= indexMax
-                );
+        const filteredMonsters = staticData.filter((monster) => {
+            if (filteredType === "emma" && monster.emmaOrder !== null) {
+              return monster.emmaOrder >= indexMin && monster.emmaOrder <= indexMax;
+            } else if (filteredType === "metag" && monster.metagOrder !== null) {
+              return monster.metagOrder >= indexMin && monster.metagOrder <= indexMax;
             } else if (filteredType === "avis") {
-                return avisData.filter(
-                    (monster) =>
-                        monster.categoryId === 333 &&
-                        monster.order >= indexMin &&
-                        monster.order <= indexMax
-                );
+              return monster.categoryId === 333 && monster.order >= indexMin && monster.order <= indexMax;
             }
-            return [];
-        })();
+            return false; 
+          });
     
     
         return(

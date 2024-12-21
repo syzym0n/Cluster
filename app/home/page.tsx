@@ -7,8 +7,6 @@ import HomeClassFilter from "@/components/homePage/centralFilter/homeClassFilter
 import HomeTypeFilter from "@/components/homePage/centralFilter/homeTypeFilter/homeTypeFilter";
 import GlobalDisplayMonsters from "@/components/homePage/displayMonsters/globalDisplayMonsters/globalDisplayMonsters";
 
-import { Monster, AvisMonster } from "@/types/types";
-
 export default function Home() {
 
     const [frontData, setFrontData] = useState<any>(null);
@@ -21,13 +19,7 @@ export default function Home() {
     const [filteredType, setFilteredType] = useState<string>("emma");
     const [filteredTypePlus, setFilteredTypePlus] = useState<number>(0);
 
-    const [emmaData, setEmmaData] = useState<Monster[]>([]);
-    const [metagData, setMetagData] = useState<Monster[]>([]);
-    const [avisData, setAvisData] = useState<AvisMonster[]>([]);
 
-
-
-    // Fetch toute la Data Statique et la range dans 4 variables différentes déjà filtrées
 
 
     const fetchStaticData = async () => {
@@ -57,15 +49,8 @@ export default function Home() {
     
             const allData = jsonData.flat();
     
-            // Filter les datas à la source
-            const filteredEmmaData = allData.filter((item: any) => item.emmaOrder !== null);
-            const filteredMetagData = allData.filter((item: any) => item.metagOrder !== null);
-            const filteredAvisData = allData.filter((item: any) => item.categoryId === 333);
     
             setStaticData(allData);
-            setEmmaData(filteredEmmaData);
-            setMetagData(filteredMetagData);
-            setAvisData(filteredAvisData);
     
         } catch (err: any) {
             setError(err.message);
@@ -106,9 +91,6 @@ export default function Home() {
     if (loading) return <p>Chargement...</p>;
     if (error) return <p>Erreur: {error}</p>;
 
- 
-
-    console.log(emmaData, metagData, avisData);
 
 
     return (
@@ -130,9 +112,7 @@ export default function Home() {
                 setFilteredTypePlus={setFilteredTypePlus}  
             />
             <GlobalDisplayMonsters
-                emmaData={emmaData}
-                metagData={metagData}
-                avisData={avisData}
+                staticData={staticData}
                 filteredType={filteredType}
                 filteredTypePlus={filteredTypePlus}
             />
