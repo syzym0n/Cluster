@@ -99,6 +99,7 @@ export default function Home() {
                 nickname={frontData[0]?.nickname || "Inconnu"} 
                 search={search} 
                 setSearch={setSearch} 
+                setFilteredType={setFilteredType}
             />
             <HomeClassFilter 
                 classOrder={frontData[0]?.classOrder || []}
@@ -116,6 +117,7 @@ export default function Home() {
                 filteredType={filteredType}
                 filteredTypePlus={filteredTypePlus}
                 classOrder={frontData[0]?.classOrder || []}
+                search={search}
             />
         </div>
     );

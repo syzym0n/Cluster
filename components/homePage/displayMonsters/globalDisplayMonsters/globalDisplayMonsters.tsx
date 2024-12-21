@@ -8,11 +8,12 @@ interface GlobalDisplayMonstersProps {
     staticData: (Monster | AvisMonster)[];
     filteredType: string;
     filteredTypePlus: number;
-    classOrder: string[]; 
+    classOrder: string[];
+    search: string;
 }
 
 
-export default function HomeDisplayMonsters({staticData,filteredType,filteredTypePlus, classOrder}:GlobalDisplayMonstersProps) {
+export default function HomeDisplayMonsters({staticData,filteredType,filteredTypePlus, classOrder, search}:GlobalDisplayMonstersProps) {
     const stepEmma = [1, 7, 13, 18, 24, 30];
         const stepMetag = [1, 5, 11, 17, 22, 28];
         const stepAvis = [0, 11, 23, 28, 31, 35, 42, 46, 52, 62];
@@ -41,6 +42,8 @@ export default function HomeDisplayMonsters({staticData,filteredType,filteredTyp
               return monster.metagOrder >= indexMin && monster.metagOrder <= indexMax;
             } else if (filteredType === "avis") {
               return monster.categoryId === 333 && monster.order >= indexMin && monster.order <= indexMax;
+            } else if (search !== "" && filteredType === ""){
+                return monster.boss.toLowerCase().includes(search.toLowerCase())
             }
             return false; 
           });
@@ -58,7 +61,9 @@ export default function HomeDisplayMonsters({staticData,filteredType,filteredTyp
                             />
                     ))
                 ) : (
-                    <p>Aucun monstre à afficher.</p>
+                    <p className="font-visby font-light text-center text-xl m-10">
+                        Clique sur un des trois personnages ou tape dans la barre de recherche.
+                    </p>
                 )}
             </div>
         );

@@ -1,12 +1,17 @@
 interface HomeSearchbarProps {
     search: string;
     setSearch: (value: string) => void;
+    setFilteredType: (value: string) => void;
 }
 
-export default function HomeSearchbar({ search, setSearch }: HomeSearchbarProps) {
+export default function HomeSearchbar({ search, setSearch, setFilteredType }: HomeSearchbarProps) {
 
     const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         setSearch(e.target.value);
+    };
+
+    const handleFocus = () => {
+        setFilteredType(""); 
     };
 
     return (
@@ -15,7 +20,8 @@ export default function HomeSearchbar({ search, setSearch }: HomeSearchbarProps)
             <input
                 type="text"
                 value={search}
-                onChange={handleInputChange} 
+                onChange={handleInputChange}
+                onFocus={handleFocus}
                 placeholder="Rechercher ..."
                 className="w-full bg-transparent border-none focus:outline-none font-visby font-thin placeholder-baseLight"
             />

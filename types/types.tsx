@@ -6,8 +6,8 @@ export interface Monster {
     emmaOrder: number | null;
     metagOrder: number | null;
     imgPath: string;
-    boss?: string;
-    challenge?: string[];
+    boss: string;
+    challenge: string[];
 }
 
 export interface AvisMonster {
