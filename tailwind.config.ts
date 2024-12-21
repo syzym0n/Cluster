@@ -20,6 +20,9 @@ export default {
       },
       scale: {
         '150': '1.5',
+      },
+      opacity: {
+        '97': '0.97',
       }
     },
   },
