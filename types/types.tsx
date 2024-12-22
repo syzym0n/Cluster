@@ -26,3 +26,6 @@ export type LevelType = {
   [key: string]: number;
 };
 
+
+export type Bountys = Record<string, Record<string, boolean>>;
+

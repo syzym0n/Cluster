@@ -48,7 +48,7 @@
             "Zoz" : 1
         },
 
-        "bounty": {
+        "bountys": {
             "A0": {"Cra": false, "Eca": false, "Eli": false, "Eni": false, "Enu": false, "Fec": false, "For": false, "Hup": false, "Iop": false, "Osa": false, "Oug": false, "Pan": false, "Roub": false, "Sac": false, "Sad": false, "Sra": false, "Ste": false, "Xel": false, "Zoz": false},
             "A1": {"Cra": false, "Eca": false, "Eli": false, "Eni": false, "Enu": false, "Fec": false, "For": false, "Hup": false, "Iop": false, "Osa": false, "Oug": false, "Pan": false, "Roub": false, "Sac": false, "Sad": false, "Sra": false, "Ste": false, "Xel": false, "Zoz": false},
             "A2": {"Cra": false, "Eca": false, "Eli": false, "Eni": false, "Enu": false, "Fec": false, "For": false, "Hup": false, "Iop": false, "Osa": false, "Oug": false, "Pan": false, "Roub": false, "Sac": false, "Sad": false, "Sra": false, "Ste": false, "Xel": false, "Zoz": false},

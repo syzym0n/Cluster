@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 
 import CardMonster from "../cardMonster/cardMonster";
 
-import { Monster, AvisMonster, LevelType } from "@/types/types";
+import { Monster, AvisMonster, LevelType, Bountys } from "@/types/types";
 
 
 
@@ -17,11 +17,13 @@ interface GlobalDisplayMonstersProps {
     metagLevel: LevelType | null;
     setEmmaLevel: (newLevel: LevelType) => void;
     setMetagLevel: (newLevel: LevelType) => void;
+    avisTracking: Bountys | null;
+    setAvisTracking: (newBountys: Bountys) => void;
 }
 
 
 export default function HomeDisplayMonsters({staticData, filteredType, filteredTypePlus,filteredClass, classOrder, search, 
-    emmaLevel, metagLevel, setEmmaLevel, setMetagLevel}:GlobalDisplayMonstersProps) {
+    emmaLevel, metagLevel, setEmmaLevel, setMetagLevel, avisTracking, setAvisTracking}:GlobalDisplayMonstersProps) {
         const stepEmma = [1, 7, 13, 18, 24, 30];
         const stepMetag = [1, 5, 11, 17, 22, 28];
         const stepAvis = [0, 11, 23, 28, 31, 35, 42, 46, 52, 62];
@@ -35,37 +37,49 @@ export default function HomeDisplayMonsters({staticData, filteredType, filteredT
             if (filteredType === "emma"){
                 setIndexMin(stepEmma[filteredTypePlus])
                 setIndexMax(stepEmma[filteredTypePlus+1]-1)
+
             } else if (filteredType === "metag"){
                 setIndexMin(stepMetag[filteredTypePlus])
                 setIndexMax(stepMetag[filteredTypePlus+1]-1)
+
             } else if (filteredType === "avis"){
                 setIndexMin(stepAvis[filteredTypePlus])
                 setIndexMax(stepAvis[filteredTypePlus+1]-1)
+
             }
         }, [filteredType, filteredTypePlus]);
     
         const filteredMonsters = staticData
         .filter((monster) => {
+
             if (filteredType === "emma" && monster.emmaOrder !== null) {
                 return monster.emmaOrder >= indexMin && monster.emmaOrder <= indexMax;
+
             } else if (filteredType === "metag" && monster.metagOrder !== null) {
                 return monster.metagOrder >= indexMin && monster.metagOrder <= indexMax;
+
             } else if (filteredType === "avis") {
                 return monster.categoryId === 333 && monster.order >= indexMin && monster.order <= indexMax;
+
             } else if (search !== "" && filteredType === "") {
                 return monster.boss.toLowerCase().includes(search.toLowerCase());
+
             }
+
             return false;
         })
         .sort((a, b) => {
             if (filteredType === 'emma' && a.emmaOrder !== null && b.emmaOrder !== null) {
                 return a.emmaOrder - b.emmaOrder;
+
             }
             if (filteredType === 'metag' && a.metagOrder !== null && b.metagOrder !== null) {
                 return a.metagOrder - b.metagOrder;
+
             }
             if (filteredType === 'avis' && a.order !== null && b.order !== null) {
                 return a.order - b.order;
+
             }
             return 0;
         });
@@ -78,7 +92,8 @@ export default function HomeDisplayMonsters({staticData, filteredType, filteredT
                 {filteredMonsters.length > 0 ? (
                     filteredMonsters.map((monster) => (
                         <CardMonster 
-                            key={monster.id} 
+                            key={monster.id}
+                            id={monster.id}
                             name={monster.boss}
                             imgPath = {monster.imgPath}
                             classOrder={classOrder}
@@ -90,6 +105,8 @@ export default function HomeDisplayMonsters({staticData, filteredType, filteredT
                             setMetagLevel={setMetagLevel}
                             filteredType={filteredType}
                             filteredClass={filteredClass}
+                            avisTracking={avisTracking}
+                            setAvisTracking={setAvisTracking}
                             />
                     ))
                 ) : (

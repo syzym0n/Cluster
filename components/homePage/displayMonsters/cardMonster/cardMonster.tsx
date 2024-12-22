@@ -2,11 +2,12 @@ import { useState, useEffect } from "react";
 
 import ClassCardMonster from "../classCardMonster/classCardMonster";
 
-import { LevelType } from "@/types/types";
+import { LevelType, Bountys } from "@/types/types";
 
 interface CardMonsterProps {
-    name: string | undefined;
-    imgPath: string | undefined;
+    id: string;
+    name: string;
+    imgPath: string;
     classOrder: string[];
     emmaOrder: number | null;
     metagOrder: number | null;
@@ -16,10 +17,12 @@ interface CardMonsterProps {
     setMetagLevel: (newLevel: LevelType) => void;
     filteredType: string;
     filteredClass: string;
+    avisTracking: Bountys | null;
+        setAvisTracking: (newBountys: Bountys) => void;
 }
 
-export default function CardMonster({name, imgPath, classOrder, emmaOrder, metagOrder, 
-    emmaLevel, metagLevel, setEmmaLevel, setMetagLevel, filteredType, filteredClass}: CardMonsterProps) {
+export default function CardMonster({id, name, imgPath, classOrder, emmaOrder, metagOrder, 
+    emmaLevel, metagLevel, setEmmaLevel, setMetagLevel, filteredType, filteredClass, avisTracking, setAvisTracking}: CardMonsterProps) {
 
 
     const isLevelSupOrderCase =
@@ -48,12 +51,20 @@ export default function CardMonster({name, imgPath, classOrder, emmaOrder, metag
         metagLevel &&
         metagLevel[filteredClass] !== undefined &&
         metagOrder > metagLevel[filteredClass])
+    
     );
 
+    const isBountyTrueClassFiltered = 
+        filteredClass !== "all" && 
+        filteredType === "avis" && 
+        avisTracking && 
+        avisTracking[id] && 
+        avisTracking[id][filteredClass] === true;
+
  
-    const greenClass = isLevelSupOrderCase ? "border-baseGreen " : "border-baseLight";
-    const opacityDecrease = isLevelSupOrderCase ? "opacity-60" : "opacity-100";
-    const greenText = isLevelSupOrderCase ? 'text-baseGreen' : 'text-baseLight';
+    const greenClass = isLevelSupOrderCase || isBountyTrueClassFiltered ? "border-baseGreen " : "border-baseLight";
+    const opacityDecrease = isLevelSupOrderCase || isBountyTrueClassFiltered ? "opacity-60" : "opacity-100";
+    const greenText = isLevelSupOrderCase || isBountyTrueClassFiltered ?  'text-baseGreen' : 'text-baseLight';
 
     const opacityDown = isOrderSupLevelCase ? 'opacity-30' : 'opacity-100'
 
@@ -63,7 +74,7 @@ export default function CardMonster({name, imgPath, classOrder, emmaOrder, metag
     return (
         <div className={`h-[35dvh] relative flex justify-center items-center my-14 ${opacityDecrease} ${opacityDown}`}>
 
-            <p className={`absolute z-0 text-[250px] uppercase whitespace-nowrap ${greenText}`}>{name}</p>
+            <p className={`absolute z-0 text-[200px] uppercase whitespace-nowrap ${greenText}`}>{name}</p>
 
             <div className={`relative z-10 w-[90dvw] h-full flex items-center justify-between
                 bg-baseDark/97 border-4 rounded-3xl p-10 ${greenClass}`}
@@ -73,7 +84,8 @@ export default function CardMonster({name, imgPath, classOrder, emmaOrder, metag
                 className="w-1/4"
                 />
                 <p className={`uppercase w-1/3 text-3xl text-center mr-10 ${greenText}`}>{name}</p>
-                <ClassCardMonster 
+                <ClassCardMonster
+                id={id}
                 classOrder={classOrder}
                 emmaOrder={emmaOrder}
                 metagOrder={metagOrder}
@@ -84,6 +96,9 @@ export default function CardMonster({name, imgPath, classOrder, emmaOrder, metag
                 filteredType={filteredType}
                 filteredClass={filteredClass}
                 isLevelSupOrderCase={isLevelSupOrderCase}
+                avisTracking={avisTracking}
+                setAvisTracking={setAvisTracking}
+                isBountyTrueClassFiltered={isBountyTrueClassFiltered}
                 />
             </div>
 

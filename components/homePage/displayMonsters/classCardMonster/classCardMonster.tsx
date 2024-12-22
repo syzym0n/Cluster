@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
-import { LevelType } from "@/types/types";
+import { LevelType, Bountys } from "@/types/types";
 
 interface ClassCardMonsterProps {
+    id: string;
     classOrder: string[];
     emmaOrder: number | null;
     metagOrder: number | null;
@@ -12,10 +13,13 @@ interface ClassCardMonsterProps {
     filteredType: string;
     filteredClass: string;
     isLevelSupOrderCase: boolean | null;
+    avisTracking: Bountys | null;
+    setAvisTracking: (newBountys: Bountys) => void;
+    isBountyTrueClassFiltered: boolean | null;
 }
 
-export default function ClassCardMonster({classOrder,emmaLevel,metagLevel,emmaOrder,metagOrder,setEmmaLevel,setMetagLevel, 
-    filteredType, filteredClass, isLevelSupOrderCase}: ClassCardMonsterProps) {
+export default function ClassCardMonster({id, classOrder,emmaLevel,metagLevel,emmaOrder,metagOrder,setEmmaLevel,setMetagLevel, 
+    filteredType, filteredClass, isLevelSupOrderCase, avisTracking, setAvisTracking, isBountyTrueClassFiltered}: ClassCardMonsterProps) {
     
 
 
@@ -33,6 +37,20 @@ export default function ClassCardMonster({classOrder,emmaLevel,metagLevel,emmaOr
                 [classItem]: metagOrder,
             });
         }
+        if (filteredType === 'avis' && avisTracking) {
+
+            const bountyId = Object.keys(avisTracking).find((avisId) => avisId === id);
+
+            if (bountyId) {
+                setAvisTracking({
+                    ...avisTracking,
+                    [bountyId]: {
+                        ...avisTracking[bountyId],
+                        [classItem]: !avisTracking[bountyId][classItem], 
+                    },
+                });
+            }
+        }
     };
 
     const classesToMap =
@@ -48,12 +66,14 @@ export default function ClassCardMonster({classOrder,emmaLevel,metagLevel,emmaOr
             {classesToMap.map((classItem) => {
                 const isEmmaMatch = emmaLevel && emmaLevel[classItem] === emmaOrder;
                 const isMetagMatch = metagLevel && metagLevel[classItem] === metagOrder;
-                const opacityClass = (isEmmaMatch || isMetagMatch) ? 'opacity-100' : 'opacity-30';
+                const isBountyTrue = avisTracking && avisTracking[id] && avisTracking[id][classItem] === true;
+
+                const opacityClass = isEmmaMatch || isMetagMatch || isBountyTrue ? "opacity-100" : "opacity-30";
 
                 const buttonClass = filteredClass === "all" ? `h-1/3 w-[calc(100%/7)] ${opacityClass}` : `h-full w-1/2`;
 
-                const imageGreenClass = isLevelSupOrderCase ? "opacity-70" : "opacity-100 ";
-                const buttonGreenClass = isLevelSupOrderCase ? "bg-baseGreen" : "bg-transparent";
+                const imageGreenClass = isLevelSupOrderCase || isBountyTrueClassFiltered ? "opacity-70" : "opacity-100 ";
+                const buttonGreenClass = isLevelSupOrderCase || isBountyTrueClassFiltered ? "bg-baseGreen" : "bg-transparent";
 
                 return (
                     <button

@@ -7,7 +7,7 @@ import HomeClassFilter from "@/components/homePage/centralFilter/homeClassFilter
 import HomeTypeFilter from "@/components/homePage/centralFilter/homeTypeFilter/homeTypeFilter";
 import GlobalDisplayMonsters from "@/components/homePage/displayMonsters/globalDisplayMonsters/globalDisplayMonsters";
 
-import { LevelType } from "@/types/types";
+import { LevelType, Bountys } from "@/types/types";
 
 export default function Home() {
 
@@ -23,6 +23,7 @@ export default function Home() {
 
     const [emmaLevel, setEmmaLevel] = useState<LevelType | null>(null);
     const [metagLevel, setMetagLevel] = useState<LevelType | null>(null);
+    const [avisTracking, setAvisTracking] = useState<Bountys | null>(null);
 
 
 
@@ -95,6 +96,7 @@ export default function Home() {
         if (frontData) {
             setEmmaLevel(frontData[0]?.emmaLevel || null);
             setMetagLevel(frontData[0]?.metagLevel || null);
+            setAvisTracking(frontData[0]?.bountys || null)
         }
     }, [frontData])
 
@@ -133,6 +135,8 @@ export default function Home() {
                 metagLevel={metagLevel}
                 setEmmaLevel={setEmmaLevel}
                 setMetagLevel={setMetagLevel}
+                avisTracking={avisTracking}
+                setAvisTracking={setAvisTracking}
             />
         </div>
     );
