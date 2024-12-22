@@ -22,12 +22,13 @@ export default function CardMonster({name, imgPath, classOrder, emmaOrder, metag
 
             <p className="absolute z-0 text-[250px] uppercase whitespace-nowrap">{name}</p>
 
-            <div className="relative z-10 w-[90dvw] h-full flex items-center justify-between 
+            <div className="relative z-10 w-[90dvw] h-full flex items-center justify-between
             bg-baseDark/97 border-4 border-baseLight rounded-3xl p-10">
                 <img 
                 src={imgPath} alt={`Illustration du Monstre ${name}`}
-                className="h-[35dvh]"
+                className="h-[30dvh]"
                 />
+                <p className="uppercase text-3xl text-center mr-10">{name}</p>
                 <ClassCardMonster 
                 classOrder={classOrder}
                 emmaOrder={emmaOrder}

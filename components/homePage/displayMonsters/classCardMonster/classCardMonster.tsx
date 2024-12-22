@@ -39,7 +39,7 @@ export default function ClassCardMonster({
     };
 
     return (
-        <div className="h-[25dvh] flex w-1/2 justify-start items-start flex-wrap gap-0">
+        <div className="h-[20dvh] flex w-2/5 justify-start items-start flex-wrap gap-0">
             {classOrder.map((classItem) => {
                 const isEmmaMatch = emmaLevel && emmaLevel[classItem] === emmaOrder;
                 const isMetagMatch = metagLevel && metagLevel[classItem] === metagOrder;
