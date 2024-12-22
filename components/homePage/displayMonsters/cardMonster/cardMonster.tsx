@@ -22,7 +22,7 @@ export default function CardMonster({name, imgPath, classOrder, emmaOrder, metag
     emmaLevel, metagLevel, setEmmaLevel, setMetagLevel, filteredType, filteredClass}: CardMonsterProps) {
 
 
-    const isGreenCase =
+    const isLevelSupOrderCase =
         filteredClass !== "all" &&
         ((filteredType === "emma" &&
             emmaOrder !== null &&
@@ -36,16 +36,32 @@ export default function CardMonster({name, imgPath, classOrder, emmaOrder, metag
             metagOrder < metagLevel[filteredClass])
         );
 
+    const isOrderSupLevelCase =
+    filteredClass !== "all" &&
+    ((filteredType === "emma" &&
+        emmaOrder !== null &&
+        emmaLevel &&
+        emmaLevel[filteredClass] !== undefined &&
+        emmaOrder > emmaLevel[filteredClass]) ||
+    (filteredType === "metag" &&
+        metagOrder !== null &&
+        metagLevel &&
+        metagLevel[filteredClass] !== undefined &&
+        metagOrder > metagLevel[filteredClass])
+    );
+
  
-    const greenClass = isGreenCase ? "border-baseGreen " : "border-baseLight";
-    const opacityDecrease = isGreenCase ? "opacity-90" : "opacity-100";
-    const greenText = isGreenCase ? 'text-baseGreen' : 'text-baseLight';
+    const greenClass = isLevelSupOrderCase ? "border-baseGreen " : "border-baseLight";
+    const opacityDecrease = isLevelSupOrderCase ? "opacity-60" : "opacity-100";
+    const greenText = isLevelSupOrderCase ? 'text-baseGreen' : 'text-baseLight';
+
+    const opacityDown = isOrderSupLevelCase ? 'opacity-30' : 'opacity-100'
 
 
     
         
     return (
-        <div className={`h-[35dvh] relative flex justify-center items-center my-14 ${opacityDecrease}`}>
+        <div className={`h-[35dvh] relative flex justify-center items-center my-14 ${opacityDecrease} ${opacityDown}`}>
 
             <p className={`absolute z-0 text-[250px] uppercase whitespace-nowrap ${greenText}`}>{name}</p>
 
@@ -67,7 +83,7 @@ export default function CardMonster({name, imgPath, classOrder, emmaOrder, metag
                 setMetagLevel={setMetagLevel}
                 filteredType={filteredType}
                 filteredClass={filteredClass}
-                isGreenCase={isGreenCase}
+                isLevelSupOrderCase={isLevelSupOrderCase}
                 />
             </div>
 

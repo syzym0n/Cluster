@@ -11,11 +11,11 @@ interface ClassCardMonsterProps {
     setMetagLevel: (newLevel: LevelType) => void;
     filteredType: string;
     filteredClass: string;
-    isGreenCase: boolean | null;
+    isLevelSupOrderCase: boolean | null;
 }
 
 export default function ClassCardMonster({classOrder,emmaLevel,metagLevel,emmaOrder,metagOrder,setEmmaLevel,setMetagLevel, 
-    filteredType, filteredClass, isGreenCase}: ClassCardMonsterProps) {
+    filteredType, filteredClass, isLevelSupOrderCase}: ClassCardMonsterProps) {
     
 
 
@@ -52,8 +52,8 @@ export default function ClassCardMonster({classOrder,emmaLevel,metagLevel,emmaOr
 
                 const buttonClass = filteredClass === "all" ? `h-1/3 w-[calc(100%/7)] ${opacityClass}` : `h-full w-1/2`;
 
-                const imageClass = isGreenCase ? "opacity-70" : "opacity-100 ";
-                const buttonGreenClass = isGreenCase ? "bg-baseGreen" : "bg-transparent";
+                const imageGreenClass = isLevelSupOrderCase ? "opacity-70" : "opacity-100 ";
+                const buttonGreenClass = isLevelSupOrderCase ? "bg-baseGreen" : "bg-transparent";
 
                 return (
                     <button
@@ -64,7 +64,7 @@ export default function ClassCardMonster({classOrder,emmaLevel,metagLevel,emmaOr
                         <img
                             src={`/class/${classItem}.png`}
                             alt={`Classe ${classItem}`}
-                            className={`object-cover h-full w-full rounded-lg ${imageClass}`}
+                            className={`object-cover h-full w-full rounded-lg ${imageGreenClass}`}
                         />
                     </button>
                 );
