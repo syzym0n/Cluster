@@ -126,6 +126,7 @@ export default function Home() {
                 staticData={staticData}
                 filteredType={filteredType}
                 filteredTypePlus={filteredTypePlus}
+                filteredClass={filteredClass}
                 classOrder={frontData[0]?.classOrder || []}
                 search={search}
                 emmaLevel={emmaLevel}

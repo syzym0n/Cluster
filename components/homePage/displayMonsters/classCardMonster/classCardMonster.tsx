@@ -9,28 +9,25 @@ interface ClassCardMonsterProps {
     metagLevel: LevelType | null;
     setEmmaLevel: (newLevel: LevelType) => void;
     setMetagLevel: (newLevel: LevelType) => void;
+    filteredType: string;
+    filteredClass: string;
+    isGreenCase: boolean | null;
 }
 
-export default function ClassCardMonster({
-    classOrder,
-    emmaLevel,
-    metagLevel,
-    emmaOrder,
-    metagOrder,
-    setEmmaLevel,
-    setMetagLevel,
-}: ClassCardMonsterProps) {
-    const [level, setLevel] = useState<'emma' | 'metag'>('emma');
+export default function ClassCardMonster({classOrder,emmaLevel,metagLevel,emmaOrder,metagOrder,setEmmaLevel,setMetagLevel, 
+    filteredType, filteredClass, isGreenCase}: ClassCardMonsterProps) {
+    
+
 
     const handleClick = (classItem: string) => {
-        if (level === 'emma' && emmaOrder !== null && emmaLevel && emmaLevel[classItem] !== emmaOrder) {
+        if (filteredType === 'emma' && emmaOrder !== null && emmaLevel && emmaLevel[classItem] !== emmaOrder) {
             setEmmaLevel({
                 ...emmaLevel,
                 [classItem]: emmaOrder,
             });
         }
 
-        if (level === 'metag' && metagOrder !== null && metagLevel && metagLevel[classItem] !== metagOrder) {
+        if (filteredType=== 'metag' && metagOrder !== null && metagLevel && metagLevel[classItem] !== metagOrder) {
             setMetagLevel({
                 ...metagLevel,
                 [classItem]: metagOrder,
@@ -38,23 +35,36 @@ export default function ClassCardMonster({
         }
     };
 
+    const classesToMap =
+    filteredClass === "all" ? classOrder : [filteredClass];
+
+    const containerClass =
+        filteredClass === "all" ? "justify-start" : "justify-center";
+
+
+
     return (
-        <div className="h-[20dvh] flex w-2/5 justify-start items-start flex-wrap gap-0">
-            {classOrder.map((classItem) => {
+        <div className={`h-[20dvh] flex w-2/5 items-start flex-wrap gap-0 ${containerClass}`}>
+            {classesToMap.map((classItem) => {
                 const isEmmaMatch = emmaLevel && emmaLevel[classItem] === emmaOrder;
                 const isMetagMatch = metagLevel && metagLevel[classItem] === metagOrder;
                 const opacityClass = (isEmmaMatch || isMetagMatch) ? 'opacity-100' : 'opacity-30';
 
+                const buttonClass = filteredClass === "all" ? `h-1/3 w-[calc(100%/7)] ${opacityClass}` : `h-full w-1/2`;
+
+                const imageClass = isGreenCase ? "opacity-70" : "opacity-100 ";
+                const buttonGreenClass = isGreenCase ? "bg-baseGreen" : "bg-transparent";
+
                 return (
                     <button
                         key={classItem}
-                        className={`h-1/3 w-[calc(100%/7)] ${opacityClass}`}
+                        className={`${buttonClass} ${buttonGreenClass} rounded-lg`}
                         onClick={() => handleClick(classItem)}
                     >
                         <img
                             src={`/class/${classItem}.png`}
                             alt={`Classe ${classItem}`}
-                            className="object-cover h-full w-full rounded-lg"
+                            className={`object-cover h-full w-full rounded-lg ${imageClass}`}
                         />
                     </button>
                 );
