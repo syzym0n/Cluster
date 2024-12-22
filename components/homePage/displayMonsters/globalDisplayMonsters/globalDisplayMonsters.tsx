@@ -2,7 +2,9 @@ import { useState, useEffect } from "react";
 
 import CardMonster from "../cardMonster/cardMonster";
 
-import { Monster, AvisMonster } from "@/types/types";
+import { Monster, AvisMonster, LevelType } from "@/types/types";
+
+
 
 interface GlobalDisplayMonstersProps {
     staticData: (Monster | AvisMonster)[];
@@ -10,16 +12,19 @@ interface GlobalDisplayMonstersProps {
     filteredTypePlus: number;
     classOrder: string[];
     search: string;
+    emmaLevel: LevelType;
+    metagLevel: LevelType;
 }
 
 
-export default function HomeDisplayMonsters({staticData,filteredType,filteredTypePlus, classOrder, search}:GlobalDisplayMonstersProps) {
-    const stepEmma = [1, 7, 13, 18, 24, 30];
+export default function HomeDisplayMonsters({staticData,filteredType,filteredTypePlus, classOrder, search, emmaLevel, metagLevel}:GlobalDisplayMonstersProps) {
+        const stepEmma = [1, 7, 13, 18, 24, 30];
         const stepMetag = [1, 5, 11, 17, 22, 28];
         const stepAvis = [0, 11, 23, 28, 31, 35, 42, 46, 52, 62];
     
         const [indexMin, setIndexMin] = useState<number>(0);
         const [indexMax, setIndexMax] = useState<number>(0);
+
     
         useEffect(() => {
     
@@ -35,18 +40,33 @@ export default function HomeDisplayMonsters({staticData,filteredType,filteredTyp
             }
         }, [filteredType, filteredTypePlus]);
     
-        const filteredMonsters = staticData.filter((monster) => {
+        const filteredMonsters = staticData
+        .filter((monster) => {
             if (filteredType === "emma" && monster.emmaOrder !== null) {
-              return monster.emmaOrder >= indexMin && monster.emmaOrder <= indexMax;
+                return monster.emmaOrder >= indexMin && monster.emmaOrder <= indexMax;
             } else if (filteredType === "metag" && monster.metagOrder !== null) {
-              return monster.metagOrder >= indexMin && monster.metagOrder <= indexMax;
+                return monster.metagOrder >= indexMin && monster.metagOrder <= indexMax;
             } else if (filteredType === "avis") {
-              return monster.categoryId === 333 && monster.order >= indexMin && monster.order <= indexMax;
-            } else if (search !== "" && filteredType === ""){
-                return monster.boss.toLowerCase().includes(search.toLowerCase())
+                return monster.categoryId === 333 && monster.order >= indexMin && monster.order <= indexMax;
+            } else if (search !== "" && filteredType === "") {
+                return monster.boss.toLowerCase().includes(search.toLowerCase());
             }
-            return false; 
-          });
+            return false;
+        })
+        .sort((a, b) => {
+            if (filteredType === 'emma' && a.emmaOrder !== null && b.emmaOrder !== null) {
+                return a.emmaOrder - b.emmaOrder;
+            }
+            if (filteredType === 'metag' && a.metagOrder !== null && b.metagOrder !== null) {
+                return a.metagOrder - b.metagOrder;
+            }
+            if (filteredType === 'avis' && a.order !== null && b.order !== null) {
+                return a.order - b.order;
+            }
+            return 0;
+        });
+
+
     
     
         return(
@@ -58,6 +78,10 @@ export default function HomeDisplayMonsters({staticData,filteredType,filteredTyp
                             name={monster.boss}
                             imgPath = {monster.imgPath}
                             classOrder={classOrder}
+                            emmaOrder={monster.emmaOrder}
+                            metagOrder={monster.metagOrder}
+                            emmaLevel={emmaLevel}
+                            metagLevel={metagLevel}
                             />
                     ))
                 ) : (

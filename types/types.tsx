@@ -20,3 +20,9 @@ export interface AvisMonster {
     metagOrder: number | null;
     imgPath: string;
 }
+
+
+export type LevelType = {
+  [key: string]: number;
+};
+

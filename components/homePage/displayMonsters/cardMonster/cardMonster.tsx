@@ -1,12 +1,19 @@
 import ClassCardMonster from "../classCardMonster/classCardMonster";
 
+import { LevelType } from "@/types/types";
+
 interface CardMonsterProps {
     name: string | undefined;
     imgPath: string | undefined;
-    classOrder: string[]; 
+    classOrder: string[];
+    emmaOrder: number | null;
+    metagOrder: number | null;
+    emmaLevel: LevelType;
+    metagLevel: LevelType;
+
 }
 
-export default function CardMonster({name, imgPath, classOrder}: CardMonsterProps) {
+export default function CardMonster({name, imgPath, classOrder, emmaOrder, metagOrder, emmaLevel, metagLevel}: CardMonsterProps) {
     return (
         <div className="h-[35dvh] relative flex justify-center items-center my-14">
 
@@ -16,10 +23,14 @@ export default function CardMonster({name, imgPath, classOrder}: CardMonsterProp
             bg-baseDark/97 border-4 border-baseLight rounded-3xl p-10">
                 <img 
                 src={imgPath} alt={`Illustration du Monstre ${name}`}
-                className="h-[30dvh]"
+                className="h-[35dvh]"
                 />
                 <ClassCardMonster 
                 classOrder={classOrder}
+                emmaOrder={emmaOrder}
+                metagOrder={metagOrder}
+                emmaLevel={emmaLevel}
+                metagLevel={metagLevel}
                 />
             </div>
 

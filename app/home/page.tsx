@@ -118,6 +118,8 @@ export default function Home() {
                 filteredTypePlus={filteredTypePlus}
                 classOrder={frontData[0]?.classOrder || []}
                 search={search}
+                emmaLevel={frontData[0]?.emmaLevel || []}
+                metagLevel={frontData[0]?.metagLevel || []}
             />
         </div>
     );
