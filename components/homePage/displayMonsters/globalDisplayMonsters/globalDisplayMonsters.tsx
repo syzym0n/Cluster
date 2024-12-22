@@ -12,12 +12,14 @@ interface GlobalDisplayMonstersProps {
     filteredTypePlus: number;
     classOrder: string[];
     search: string;
-    emmaLevel: LevelType;
-    metagLevel: LevelType;
+    emmaLevel: LevelType | null;
+    metagLevel: LevelType | null;
+    setEmmaLevel: (newLevel: LevelType) => void;
+    setMetagLevel: (newLevel: LevelType) => void;
 }
 
 
-export default function HomeDisplayMonsters({staticData,filteredType,filteredTypePlus, classOrder, search, emmaLevel, metagLevel}:GlobalDisplayMonstersProps) {
+export default function HomeDisplayMonsters({staticData,filteredType,filteredTypePlus, classOrder, search, emmaLevel, metagLevel, setEmmaLevel, setMetagLevel}:GlobalDisplayMonstersProps) {
         const stepEmma = [1, 7, 13, 18, 24, 30];
         const stepMetag = [1, 5, 11, 17, 22, 28];
         const stepAvis = [0, 11, 23, 28, 31, 35, 42, 46, 52, 62];
@@ -82,6 +84,8 @@ export default function HomeDisplayMonsters({staticData,filteredType,filteredTyp
                             metagOrder={monster.metagOrder}
                             emmaLevel={emmaLevel}
                             metagLevel={metagLevel}
+                            setEmmaLevel={setEmmaLevel}
+                            setMetagLevel={setMetagLevel}
                             />
                     ))
                 ) : (

@@ -1,3 +1,5 @@
+import { useState, useEffect } from "react";
+
 import ClassCardMonster from "../classCardMonster/classCardMonster";
 
 import { LevelType } from "@/types/types";
@@ -8,12 +10,13 @@ interface CardMonsterProps {
     classOrder: string[];
     emmaOrder: number | null;
     metagOrder: number | null;
-    emmaLevel: LevelType;
-    metagLevel: LevelType;
-
+    emmaLevel: LevelType | null;
+    metagLevel: LevelType | null;
+    setEmmaLevel: (newLevel: LevelType) => void;
+    setMetagLevel: (newLevel: LevelType) => void;
 }
 
-export default function CardMonster({name, imgPath, classOrder, emmaOrder, metagOrder, emmaLevel, metagLevel}: CardMonsterProps) {
+export default function CardMonster({name, imgPath, classOrder, emmaOrder, metagOrder, emmaLevel, metagLevel, setEmmaLevel, setMetagLevel}: CardMonsterProps) {
     return (
         <div className="h-[35dvh] relative flex justify-center items-center my-14">
 
@@ -31,6 +34,8 @@ export default function CardMonster({name, imgPath, classOrder, emmaOrder, metag
                 metagOrder={metagOrder}
                 emmaLevel={emmaLevel}
                 metagLevel={metagLevel}
+                setEmmaLevel={setEmmaLevel}
+                setMetagLevel={setMetagLevel}
                 />
             </div>
 

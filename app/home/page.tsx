@@ -7,6 +7,8 @@ import HomeClassFilter from "@/components/homePage/centralFilter/homeClassFilter
 import HomeTypeFilter from "@/components/homePage/centralFilter/homeTypeFilter/homeTypeFilter";
 import GlobalDisplayMonsters from "@/components/homePage/displayMonsters/globalDisplayMonsters/globalDisplayMonsters";
 
+import { LevelType } from "@/types/types";
+
 export default function Home() {
 
     const [frontData, setFrontData] = useState<any>(null);
@@ -19,6 +21,8 @@ export default function Home() {
     const [filteredType, setFilteredType] = useState<string>("emma");
     const [filteredTypePlus, setFilteredTypePlus] = useState<number>(0);
 
+    const [emmaLevel, setEmmaLevel] = useState<LevelType | null>(null);
+    const [metagLevel, setMetagLevel] = useState<LevelType | null>(null);
 
 
 
@@ -83,10 +87,16 @@ export default function Home() {
 
    
     useEffect(() => {
-        if (!frontData) {
-            fetchFrontData();
+        fetchFrontData();
+    }, []);
+
+ 
+    useEffect(() => {
+        if (frontData) {
+            setEmmaLevel(frontData[0]?.emmaLevel || null);
+            setMetagLevel(frontData[0]?.metagLevel || null);
         }
-    }, [frontData]);
+    }, [frontData])
 
     if (loading) return <p>Chargement...</p>;
     if (error) return <p>Erreur: {error}</p>;
@@ -118,8 +128,10 @@ export default function Home() {
                 filteredTypePlus={filteredTypePlus}
                 classOrder={frontData[0]?.classOrder || []}
                 search={search}
-                emmaLevel={frontData[0]?.emmaLevel || []}
-                metagLevel={frontData[0]?.metagLevel || []}
+                emmaLevel={emmaLevel}
+                metagLevel={metagLevel}
+                setEmmaLevel={setEmmaLevel}
+                setMetagLevel={setMetagLevel}
             />
         </div>
     );
