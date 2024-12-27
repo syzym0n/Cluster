@@ -72,16 +72,16 @@ export default function CardMonster({id, name, imgPath, classOrder, emmaOrder, m
     
         
     return (
-        <div className={`h-[35dvh] relative flex justify-center items-center my-14 ${opacityDecrease} ${opacityDown}`}>
+        <div className={`h-[25dvh] relative flex justify-center items-center my-10 ${opacityDecrease} ${opacityDown} group`}>
 
-            <p className={`absolute z-0 text-[200px] uppercase whitespace-nowrap ${greenText}`}>{name}</p>
+            <p className={`absolute z-0 text-[200px] uppercase whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-300 ${greenText}`}>{name}</p>
 
             <div className={`relative z-10 w-[90dvw] h-full flex items-center justify-between
                 bg-baseDark/97 border-4 rounded-3xl p-10 ${greenClass}`}
             >
                 <img 
                 src={imgPath} alt={`Illustration du Monstre ${name}`}
-                className="w-1/4"
+                className="h-[25dvh]"
                 />
                 <p className={`uppercase w-1/3 text-3xl text-center mr-10 ${greenText}`}>{name}</p>
                 <ClassCardMonster

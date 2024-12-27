@@ -66,9 +66,9 @@ export default function ClassCardMonster({id, classOrder,emmaLevel,metagLevel,em
             {classesToMap.map((classItem) => {
                 const isEmmaMatch = emmaLevel && emmaLevel[classItem] === emmaOrder;
                 const isMetagMatch = metagLevel && metagLevel[classItem] === metagOrder;
-                const isBountyTrue = avisTracking && avisTracking[id] && avisTracking[id][classItem] === true;
+                const isBountyFalse = avisTracking && avisTracking[id] && avisTracking[id][classItem] === false;
 
-                const opacityClass = isEmmaMatch || isMetagMatch || isBountyTrue ? "opacity-100" : "opacity-30";
+                const opacityClass = isEmmaMatch || isMetagMatch || isBountyFalse ? "opacity-100" : "opacity-30";
 
                 const buttonClass = filteredClass === "all" ? `h-1/3 w-[calc(100%/7)] ${opacityClass}` : `h-full w-1/2`;
 
