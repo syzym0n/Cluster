@@ -4,7 +4,7 @@ interface SortableItemProps {
     id: string;
   }
   
-  function SortableItem({id}: SortableItemProps) {
+  export default function SortableItem({id}: SortableItemProps) {
     const { attributes, listeners, setNodeRef, transform, isDragging } = useSortable({id});
     
     const style = {
@@ -17,10 +17,8 @@ interface SortableItemProps {
         <img
             src={`/class/${id}.png`}
             alt={id}
-            className="w-16 h-16 object-contain rounded-lg"
+            className="object-contain rounded-lg"
             />
       </div>
     );
   }
-
-  export default SortableItem

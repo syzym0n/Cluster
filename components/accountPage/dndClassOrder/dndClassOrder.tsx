@@ -10,7 +10,7 @@ interface DndClassOrderProps {
   initialOrder: string[];
 }
 
-function DndClassOrder({ initialOrder }: DndClassOrderProps) {
+export default function DndClassOrder({ initialOrder }: DndClassOrderProps) {
   const [classOrder, setClassOrder] = useState<string[]>(initialOrder);
 
 
@@ -33,21 +33,28 @@ function DndClassOrder({ initialOrder }: DndClassOrderProps) {
     setClassOrder(updatedOrder);
   };
 
+
   return (
-    <DndContext onDragEnd={handleDragEnd}>
-      <SortableContext items={classOrder} strategy={verticalListSortingStrategy}>
-        <div className="grid grid-cols-10 grid-rows-2 gap-4 p-4">
-          {classOrder.map((className) => (
-            <SortableItem key={className} id={className} />
-          ))}
+    <div className='mx-16'>
+        <div className='flex justify-between items-end'>
+            <p className='font-visby'>1</p>
+            <p className='text-3xl'>TON ORDRE</p>
         </div>
-      </SortableContext>
-    </DndContext>
+
+        <DndContext onDragEnd={handleDragEnd}>
+        <SortableContext items={classOrder} strategy={verticalListSortingStrategy}>
+            <div className="grid grid-cols-10 grid-rows-2 gap-4">
+            {classOrder.map((className) => (
+                <SortableItem key={className} id={className} />
+            ))}
+            </div>
+        </SortableContext>
+        </DndContext>
+
+        <p className='font-visby'>11</p>
+    </div>
   );
 }
 
-
-
-export default DndClassOrder;
 
 

@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useEffect, useState } from 'react';
-import Logo from '@/components/logo/logo';
+import AccountHeader from '@/components/accountPage/accountHeader/accountHeader'
 import DndClassOrder from '@/components/accountPage/dndClassOrder/dndClassOrder';
 
 const AccountPage = () => {
@@ -28,9 +28,10 @@ const AccountPage = () => {
 
 
   return (
-    <div className="p-8">
-      <Logo />
+    <div>
+      <AccountHeader />
       <DndClassOrder initialOrder={userData[0].classOrder} />
+      <h2 className='uppercase flex justify-center text-[100px] mt-10'>{userData[0].nickname}</h2>
     </div>
   );
 };
